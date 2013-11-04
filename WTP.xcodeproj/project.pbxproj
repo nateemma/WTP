@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		862C725C17AC7C55009AC07E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725B17AC7C55009AC07E /* UIKit.framework */; };
+		862C725E17AC7C55009AC07E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725D17AC7C55009AC07E /* Foundation.framework */; };
+		862C726017AC7C55009AC07E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725F17AC7C55009AC07E /* CoreGraphics.framework */; };
+		862C726817AC7C55009AC07E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 862C726717AC7C55009AC07E /* main.m */; };
+		862C726C17AC7C55009AC07E /* WTPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862C726B17AC7C55009AC07E /* WTPAppDelegate.m */; };
+		8633D2281807671C0095342F /* testdata in Resources */ = {isa = PBXBuildFile; fileRef = 8633D2271807671C0095342F /* testdata */; };
+		8633D229180767240095342F /* testdata in Resources */ = {isa = PBXBuildFile; fileRef = 8633D2271807671C0095342F /* testdata */; };
+		8648E2ED17F62679001B7488 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86012D2517CF9B5400E7E61E /* InfoPlist.strings */; };
+		8657D0E817D5728700798573 /* BoilerWaterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8657D0E717D5728700798573 /* BoilerWaterModel.m */; };
+		8657D0EA17D6A17200798573 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8657D0E917D6A17200798573 /* QuartzCore.framework */; };
+		8657D0ED17D6A30400798573 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8657D0EC17D6A30400798573 /* GradientButton.m */; };
+		8657D0F317DE79AF00798573 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8657D0F217DE79AF00798573 /* Icon.png */; };
+		8657D0F517DE79B900798573 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8657D0F417DE79B900798573 /* Icon@2x.png */; };
+		86943B0617E7AB9D00413445 /* CoolingWaterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B0517E7AB9D00413445 /* CoolingWaterModel.m */; };
+		86943B1217E8212E00413445 /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1117E8212E00413445 /* InfoTableViewController.m */; };
+		86943B1517EA660100413445 /* BoilerInputTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1417EA660100413445 /* BoilerInputTableViewController.m */; };
+		86943B1817EA7D5B00413445 /* BoilerProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1717EA7D5B00413445 /* BoilerProductsTableViewController.m */; };
+		86943B1B17EFBA8E00413445 /* CoolingInputTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */; };
+		86943B1E17EFBE9A00413445 /* CoolingProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1D17EFBE9A00413445 /* CoolingProductsTableViewController.m */; };
+		86943B2417F0C65700413445 /* FieldNavigationLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B2317F0C65700413445 /* FieldNavigationLink.m */; };
+		86943B2617F39EA300413445 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86943B2517F39EA200413445 /* MessageUI.framework */; };
+		86943B2817F39EC400413445 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86943B2717F39EC400413445 /* MapKit.framework */; };
+		86C2568317F62E9200632139 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86012D4617D1149B00E7E61E /* MainStoryboard.storyboard */; };
+		86C2568517F634C600632139 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2568417F634C600632139 /* bg3.png */; };
+		86C2568717F634DB00632139 /* bg3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2568617F634DB00632139 /* bg3@2x.png */; };
+		86C2568917F634EA00632139 /* bg3-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2568817F634EA00632139 /* bg3-568h@2x.png */; };
+		86C2569117F6371800632139 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C2569017F6371800632139 /* Images.xcassets */; };
+		86C2569517F64E0900632139 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2569217F64E0900632139 /* Default-568h@2x.png */; };
+		86C2569617F64E0900632139 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2569317F64E0900632139 /* Default.png */; };
+		86C2569717F64E0900632139 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2569417F64E0900632139 /* Default@2x.png */; };
+		86C2569E17FB3CD400632139 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C2569D17FB3CD400632139 /* CoreFoundation.framework */; };
+		86C256AD17FB43A400632139 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C256AC17FB43A400632139 /* XCTest.framework */; };
+		86C256AE17FB43A400632139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725D17AC7C55009AC07E /* Foundation.framework */; };
+		86C256AF17FB43A400632139 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725B17AC7C55009AC07E /* UIKit.framework */; };
+		86C256B517FB43A400632139 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86C256B317FB43A400632139 /* InfoPlist.strings */; };
+		86C256B717FB43A400632139 /* WTP_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C256B617FB43A400632139 /* WTP_Tests.m */; };
+		86C256BF17FC8DE300632139 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C256BE17FC8DE300632139 /* Icon-60@2x.png */; };
+		86C256D317FD30AF00632139 /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C256D117FD2FC900632139 /* Help.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86C256B917FB43A400632139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862C725017AC7C55009AC07E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862C725717AC7C55009AC07E;
+			remoteInfo = WTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86C2569A17FB3CD300632139 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		86012D2617CF9B5400E7E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86012D2817CF9B5400E7E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		86012D2D17CF9B5400E7E61E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86012D2E17CF9B5400E7E61E /* WTP-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WTP-Info.plist"; sourceTree = "<group>"; };
+		86012D2F17CF9B5400E7E61E /* WTP-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WTP-Prefix.pch"; sourceTree = "<group>"; };
+		86012D3017CF9B5400E7E61E /* WTPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPAppDelegate.h; sourceTree = "<group>"; };
+		86012D3117CF9B5400E7E61E /* WTPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPAppDelegate.m; sourceTree = "<group>"; };
+		86012D4517D1149B00E7E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86012D4717D1149B00E7E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		86012D4C17D1149B00E7E61E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86012D4D17D1149B00E7E61E /* WTP-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WTP-Info.plist"; sourceTree = "<group>"; };
+		86012D4E17D1149B00E7E61E /* WTP-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WTP-Prefix.pch"; sourceTree = "<group>"; };
+		86012D4F17D1149B00E7E61E /* WTPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPAppDelegate.h; sourceTree = "<group>"; };
+		86012D5017D1149B00E7E61E /* WTPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPAppDelegate.m; sourceTree = "<group>"; };
+		862C725817AC7C55009AC07E /* WTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		862C725B17AC7C55009AC07E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		862C725D17AC7C55009AC07E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		862C725F17AC7C55009AC07E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		862C726317AC7C55009AC07E /* WTP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WTP-Info.plist"; sourceTree = "<group>"; };
+		862C726517AC7C55009AC07E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		862C726717AC7C55009AC07E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		862C726917AC7C55009AC07E /* WTP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTP-Prefix.pch"; sourceTree = "<group>"; };
+		862C726A17AC7C55009AC07E /* WTPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPAppDelegate.h; sourceTree = "<group>"; };
+		862C726B17AC7C55009AC07E /* WTPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPAppDelegate.m; sourceTree = "<group>"; };
+		8633D2271807671C0095342F /* testdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = testdata; sourceTree = "<group>"; };
+		8657D0E617D5728700798573 /* BoilerWaterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerWaterModel.h; sourceTree = "<group>"; };
+		8657D0E717D5728700798573 /* BoilerWaterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerWaterModel.m; sourceTree = "<group>"; };
+		8657D0E917D6A17200798573 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8657D0EB17D6A30400798573 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
+		8657D0EC17D6A30400798573 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		8657D0F217DE79AF00798573 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8657D0F417DE79B900798573 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		86943B0017E7A46000413445 /* CoolingWaterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoolingWaterModel.h; path = ../CoolingWaterModel.h; sourceTree = "<group>"; };
+		86943B0517E7AB9D00413445 /* CoolingWaterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingWaterModel.m; sourceTree = "<group>"; };
+		86943B1017E8212E00413445 /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
+		86943B1117E8212E00413445 /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
+		86943B1317EA660100413445 /* BoilerInputTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerInputTableViewController.h; sourceTree = "<group>"; };
+		86943B1417EA660100413445 /* BoilerInputTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerInputTableViewController.m; sourceTree = "<group>"; };
+		86943B1617EA7D5A00413445 /* BoilerProductsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerProductsTableViewController.h; sourceTree = "<group>"; };
+		86943B1717EA7D5B00413445 /* BoilerProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerProductsTableViewController.m; sourceTree = "<group>"; };
+		86943B1917EFBA8E00413445 /* CoolingInputTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingInputTableViewController.h; sourceTree = "<group>"; };
+		86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingInputTableViewController.m; sourceTree = "<group>"; };
+		86943B1C17EFBE9A00413445 /* CoolingProductsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingProductsTableViewController.h; sourceTree = "<group>"; };
+		86943B1D17EFBE9A00413445 /* CoolingProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingProductsTableViewController.m; sourceTree = "<group>"; };
+		86943B2217F0C65700413445 /* FieldNavigationLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldNavigationLink.h; sourceTree = "<group>"; };
+		86943B2317F0C65700413445 /* FieldNavigationLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldNavigationLink.m; sourceTree = "<group>"; };
+		86943B2517F39EA200413445 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		86943B2717F39EC400413445 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		86C2568417F634C600632139 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg3.png; sourceTree = "<group>"; };
+		86C2568617F634DB00632139 /* bg3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg3@2x.png"; sourceTree = "<group>"; };
+		86C2568817F634EA00632139 /* bg3-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg3-568h@2x.png"; sourceTree = "<group>"; };
+		86C2569017F6371800632139 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		86C2569217F64E0900632139 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "WTP/Default-568h@2x.png"; sourceTree = "<group>"; };
+		86C2569317F64E0900632139 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = WTP/Default.png; sourceTree = "<group>"; };
+		86C2569417F64E0900632139 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "WTP/Default@2x.png"; sourceTree = "<group>"; };
+		86C2569C17FB3CD400632139 /* WTPtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WTPtest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C2569D17FB3CD400632139 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		86C256AB17FB43A400632139 /* WTP Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WTP Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C256AC17FB43A400632139 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		86C256B217FB43A400632139 /* WTP Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WTP Tests-Info.plist"; sourceTree = "<group>"; };
+		86C256B417FB43A400632139 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86C256B617FB43A400632139 /* WTP_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTP_Tests.m; sourceTree = "<group>"; };
+		86C256B817FB43A400632139 /* WTP Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTP Tests-Prefix.pch"; sourceTree = "<group>"; };
+		86C256BE17FC8DE300632139 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		86C256D117FD2FC900632139 /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Help.png; path = WTP/Help.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		862C725517AC7C55009AC07E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86943B2817F39EC400413445 /* MapKit.framework in Frameworks */,
+				86943B2617F39EA300413445 /* MessageUI.framework in Frameworks */,
+				8657D0EA17D6A17200798573 /* QuartzCore.framework in Frameworks */,
+				862C725C17AC7C55009AC07E /* UIKit.framework in Frameworks */,
+				862C725E17AC7C55009AC07E /* Foundation.framework in Frameworks */,
+				862C726017AC7C55009AC07E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2569917FB3CD300632139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C2569E17FB3CD400632139 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C256A817FB43A400632139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C256AD17FB43A400632139 /* XCTest.framework in Frameworks */,
+				86C256AF17FB43A400632139 /* UIKit.framework in Frameworks */,
+				86C256AE17FB43A400632139 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86012D2117CF9B5400E7E61E /* WTP */ = {
+			isa = PBXGroup;
+			children = (
+				86943B1317EA660100413445 /* BoilerInputTableViewController.h */,
+				86943B1417EA660100413445 /* BoilerInputTableViewController.m */,
+				86943B1617EA7D5A00413445 /* BoilerProductsTableViewController.h */,
+				86943B1717EA7D5B00413445 /* BoilerProductsTableViewController.m */,
+				8657D0E617D5728700798573 /* BoilerWaterModel.h */,
+				8657D0E717D5728700798573 /* BoilerWaterModel.m */,
+				86943B1917EFBA8E00413445 /* CoolingInputTableViewController.h */,
+				86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */,
+				86943B1C17EFBE9A00413445 /* CoolingProductsTableViewController.h */,
+				86943B1D17EFBE9A00413445 /* CoolingProductsTableViewController.m */,
+				86943B0017E7A46000413445 /* CoolingWaterModel.h */,
+				86943B0517E7AB9D00413445 /* CoolingWaterModel.m */,
+				86943B2217F0C65700413445 /* FieldNavigationLink.h */,
+				86943B2317F0C65700413445 /* FieldNavigationLink.m */,
+				8657D0EB17D6A30400798573 /* GradientButton.h */,
+				8657D0EC17D6A30400798573 /* GradientButton.m */,
+				8657D0F217DE79AF00798573 /* Icon.png */,
+				86012D2717CF9B5400E7E61E /* MainStoryboard.storyboard */,
+				8657D0F417DE79B900798573 /* Icon@2x.png */,
+				86012D2517CF9B5400E7E61E /* InfoPlist.strings */,
+				86943B1017E8212E00413445 /* InfoTableViewController.h */,
+				86943B1117E8212E00413445 /* InfoTableViewController.m */,
+				86012D2D17CF9B5400E7E61E /* main.m */,
+				86012D2E17CF9B5400E7E61E /* WTP-Info.plist */,
+				86012D2F17CF9B5400E7E61E /* WTP-Prefix.pch */,
+				86012D3017CF9B5400E7E61E /* WTPAppDelegate.h */,
+				86012D3117CF9B5400E7E61E /* WTPAppDelegate.m */,
+				86C2569017F6371800632139 /* Images.xcassets */,
+			);
+			path = WTP;
+			sourceTree = "<group>";
+		};
+		86012D4017D1149B00E7E61E /* WTP */ = {
+			isa = PBXGroup;
+			children = (
+				86012D4417D1149B00E7E61E /* InfoPlist.strings */,
+				86012D4617D1149B00E7E61E /* MainStoryboard.storyboard */,
+				86012D4C17D1149B00E7E61E /* main.m */,
+				86012D4D17D1149B00E7E61E /* WTP-Info.plist */,
+				86012D4E17D1149B00E7E61E /* WTP-Prefix.pch */,
+				86012D4F17D1149B00E7E61E /* WTPAppDelegate.h */,
+				86012D5017D1149B00E7E61E /* WTPAppDelegate.m */,
+			);
+			name = WTP;
+			sourceTree = "<group>";
+		};
+		862C724F17AC7C55009AC07E = {
+			isa = PBXGroup;
+			children = (
+				8633D2271807671C0095342F /* testdata */,
+				86C2569217F64E0900632139 /* Default-568h@2x.png */,
+				86C2569317F64E0900632139 /* Default.png */,
+				86C2569417F64E0900632139 /* Default@2x.png */,
+				86C2568817F634EA00632139 /* bg3-568h@2x.png */,
+				86C2568617F634DB00632139 /* bg3@2x.png */,
+				86C2568417F634C600632139 /* bg3.png */,
+				86C256D117FD2FC900632139 /* Help.png */,
+				86943B2717F39EC400413445 /* MapKit.framework */,
+				86943B2517F39EA200413445 /* MessageUI.framework */,
+				8657D0E917D6A17200798573 /* QuartzCore.framework */,
+				86012D2117CF9B5400E7E61E /* WTP */,
+				862C726117AC7C55009AC07E /* WTP */,
+				86C256B017FB43A400632139 /* WTP Tests */,
+				862C725A17AC7C55009AC07E /* Frameworks */,
+				862C725917AC7C55009AC07E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		862C725917AC7C55009AC07E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				862C725817AC7C55009AC07E /* WTP.app */,
+				86C2569C17FB3CD400632139 /* WTPtest */,
+				86C256AB17FB43A400632139 /* WTP Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		862C725A17AC7C55009AC07E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				862C725B17AC7C55009AC07E /* UIKit.framework */,
+				862C725D17AC7C55009AC07E /* Foundation.framework */,
+				862C725F17AC7C55009AC07E /* CoreGraphics.framework */,
+				86C2569D17FB3CD400632139 /* CoreFoundation.framework */,
+				86C256AC17FB43A400632139 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		862C726117AC7C55009AC07E /* WTP */ = {
+			isa = PBXGroup;
+			children = (
+				86012D4017D1149B00E7E61E /* WTP */,
+				862C726A17AC7C55009AC07E /* WTPAppDelegate.h */,
+				862C726B17AC7C55009AC07E /* WTPAppDelegate.m */,
+				862C726217AC7C55009AC07E /* Supporting Files */,
+			);
+			path = WTP;
+			sourceTree = "<group>";
+		};
+		862C726217AC7C55009AC07E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				862C726317AC7C55009AC07E /* WTP-Info.plist */,
+				862C726417AC7C55009AC07E /* InfoPlist.strings */,
+				862C726717AC7C55009AC07E /* main.m */,
+				862C726917AC7C55009AC07E /* WTP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86C256B017FB43A400632139 /* WTP Tests */ = {
+			isa = PBXGroup;
+			children = (
+				86C256B617FB43A400632139 /* WTP_Tests.m */,
+				86C256BE17FC8DE300632139 /* Icon-60@2x.png */,
+				86C256B117FB43A400632139 /* Supporting Files */,
+			);
+			path = "WTP Tests";
+			sourceTree = "<group>";
+		};
+		86C256B117FB43A400632139 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86C256B217FB43A400632139 /* WTP Tests-Info.plist */,
+				86C256B317FB43A400632139 /* InfoPlist.strings */,
+				86C256B817FB43A400632139 /* WTP Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		862C725717AC7C55009AC07E /* WTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862C727B17AC7C55009AC07E /* Build configuration list for PBXNativeTarget "WTP" */;
+			buildPhases = (
+				862C725417AC7C55009AC07E /* Sources */,
+				862C725517AC7C55009AC07E /* Frameworks */,
+				862C725617AC7C55009AC07E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTP;
+			productName = WTP;
+			productReference = 862C725817AC7C55009AC07E /* WTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86C2569B17FB3CD300632139 /* WTPtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C256A417FB3CD400632139 /* Build configuration list for PBXNativeTarget "WTPtest" */;
+			buildPhases = (
+				86C2569817FB3CD300632139 /* Sources */,
+				86C2569917FB3CD300632139 /* Frameworks */,
+				86C2569A17FB3CD300632139 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTPtest;
+			productName = WTPtest;
+			productReference = 86C2569C17FB3CD400632139 /* WTPtest */;
+			productType = "com.apple.product-type.tool";
+		};
+		86C256AA17FB43A400632139 /* WTP Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C256BB17FB43A400632139 /* Build configuration list for PBXNativeTarget "WTP Tests" */;
+			buildPhases = (
+				86C256A717FB43A400632139 /* Sources */,
+				86C256A817FB43A400632139 /* Frameworks */,
+				86C256A917FB43A400632139 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86C256BA17FB43A400632139 /* PBXTargetDependency */,
+			);
+			name = "WTP Tests";
+			productName = "WTP Tests";
+			productReference = 86C256AB17FB43A400632139 /* WTP Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		862C725017AC7C55009AC07E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WTP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Nateemma;
+				TargetAttributes = {
+					862C725717AC7C55009AC07E = {
+						DevelopmentTeam = R27PD7337M;
+					};
+					86C256AA17FB43A400632139 = {
+						TestTargetID = 862C725717AC7C55009AC07E;
+					};
+				};
+			};
+			buildConfigurationList = 862C725317AC7C55009AC07E /* Build configuration list for PBXProject "WTP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 862C724F17AC7C55009AC07E;
+			productRefGroup = 862C725917AC7C55009AC07E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				862C725717AC7C55009AC07E /* WTP */,
+				86C2569B17FB3CD300632139 /* WTPtest */,
+				86C256AA17FB43A400632139 /* WTP Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		862C725617AC7C55009AC07E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8633D229180767240095342F /* testdata in Resources */,
+				86C256D317FD30AF00632139 /* Help.png in Resources */,
+				86C2568317F62E9200632139 /* MainStoryboard.storyboard in Resources */,
+				8648E2ED17F62679001B7488 /* InfoPlist.strings in Resources */,
+				86C2569517F64E0900632139 /* Default-568h@2x.png in Resources */,
+				86C2569117F6371800632139 /* Images.xcassets in Resources */,
+				86C2568517F634C600632139 /* bg3.png in Resources */,
+				86C2569717F64E0900632139 /* Default@2x.png in Resources */,
+				86C2568717F634DB00632139 /* bg3@2x.png in Resources */,
+				86C2568917F634EA00632139 /* bg3-568h@2x.png in Resources */,
+				8657D0F317DE79AF00798573 /* Icon.png in Resources */,
+				8657D0F517DE79B900798573 /* Icon@2x.png in Resources */,
+				86C2569617F64E0900632139 /* Default.png in Resources */,
+				86C256BF17FC8DE300632139 /* Icon-60@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C256A917FB43A400632139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8633D2281807671C0095342F /* testdata in Resources */,
+				86C256B517FB43A400632139 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		862C725417AC7C55009AC07E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862C726817AC7C55009AC07E /* main.m in Sources */,
+				862C726C17AC7C55009AC07E /* WTPAppDelegate.m in Sources */,
+				8657D0E817D5728700798573 /* BoilerWaterModel.m in Sources */,
+				8657D0ED17D6A30400798573 /* GradientButton.m in Sources */,
+				86943B0617E7AB9D00413445 /* CoolingWaterModel.m in Sources */,
+				86943B1217E8212E00413445 /* InfoTableViewController.m in Sources */,
+				86943B1517EA660100413445 /* BoilerInputTableViewController.m in Sources */,
+				86943B1817EA7D5B00413445 /* BoilerProductsTableViewController.m in Sources */,
+				86943B1B17EFBA8E00413445 /* CoolingInputTableViewController.m in Sources */,
+				86943B1E17EFBE9A00413445 /* CoolingProductsTableViewController.m in Sources */,
+				86943B2417F0C65700413445 /* FieldNavigationLink.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2569817FB3CD300632139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C256A717FB43A400632139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C256B717FB43A400632139 /* WTP_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86C256BA17FB43A400632139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862C725717AC7C55009AC07E /* WTP */;
+			targetProxy = 86C256B917FB43A400632139 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86012D2517CF9B5400E7E61E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86012D2617CF9B5400E7E61E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86012D2717CF9B5400E7E61E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86012D2817CF9B5400E7E61E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		86012D4417D1149B00E7E61E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86012D4517D1149B00E7E61E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86012D4617D1149B00E7E61E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86012D4717D1149B00E7E61E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		862C726417AC7C55009AC07E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862C726517AC7C55009AC07E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86C256B317FB43A400632139 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86C256B417FB43A400632139 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		862C727917AC7C55009AC07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		862C727A17AC7C55009AC07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		862C727C17AC7C55009AC07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WTP/WTP-Prefix.pch";
+				INFOPLIST_FILE = "WTP/WTP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DF522ED7-02CF-4C3D-8203-18F5A636A3E3";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		862C727D17AC7C55009AC07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WTP/WTP-Prefix.pch";
+				INFOPLIST_FILE = "WTP/WTP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DF522ED7-02CF-4C3D-8203-18F5A636A3E3";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		86C256A517FB3CD400632139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		86C256A617FB3CD400632139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		86C256BC17FB43A400632139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WTP.app/WTP";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WTP Tests/WTP Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "WTP Tests/WTP Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		86C256BD17FB43A400632139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WTP.app/WTP";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WTP Tests/WTP Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "WTP Tests/WTP Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		862C725317AC7C55009AC07E /* Build configuration list for PBXProject "WTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862C727917AC7C55009AC07E /* Debug */,
+				862C727A17AC7C55009AC07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862C727B17AC7C55009AC07E /* Build configuration list for PBXNativeTarget "WTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862C727C17AC7C55009AC07E /* Debug */,
+				862C727D17AC7C55009AC07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86C256A417FB3CD400632139 /* Build configuration list for PBXNativeTarget "WTPtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C256A517FB3CD400632139 /* Debug */,
+				86C256A617FB3CD400632139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86C256BB17FB43A400632139 /* Build configuration list for PBXNativeTarget "WTP Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C256BC17FB43A400632139 /* Debug */,
+				86C256BD17FB43A400632139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 862C725017AC7C55009AC07E /* Project object */;
+}
