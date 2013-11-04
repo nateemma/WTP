@@ -95,6 +95,7 @@
 		862C726A17AC7C55009AC07E /* WTPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPAppDelegate.h; sourceTree = "<group>"; };
 		862C726B17AC7C55009AC07E /* WTPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPAppDelegate.m; sourceTree = "<group>"; };
 		8633D2271807671C0095342F /* testdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = testdata; sourceTree = "<group>"; };
+		8646ADC91828525E009C6C80 /* CoolingWaterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingWaterModel.h; sourceTree = "<group>"; };
 		8657D0E617D5728700798573 /* BoilerWaterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerWaterModel.h; sourceTree = "<group>"; };
 		8657D0E717D5728700798573 /* BoilerWaterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerWaterModel.m; sourceTree = "<group>"; };
 		8657D0E917D6A17200798573 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -102,7 +103,6 @@
 		8657D0EC17D6A30400798573 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
 		8657D0F217DE79AF00798573 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8657D0F417DE79B900798573 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		86943B0017E7A46000413445 /* CoolingWaterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoolingWaterModel.h; path = ../CoolingWaterModel.h; sourceTree = "<group>"; };
 		86943B0517E7AB9D00413445 /* CoolingWaterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingWaterModel.m; sourceTree = "<group>"; };
 		86943B1017E8212E00413445 /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
 		86943B1117E8212E00413445 /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 				86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */,
 				86943B1C17EFBE9A00413445 /* CoolingProductsTableViewController.h */,
 				86943B1D17EFBE9A00413445 /* CoolingProductsTableViewController.m */,
-				86943B0017E7A46000413445 /* CoolingWaterModel.h */,
+				8646ADC91828525E009C6C80 /* CoolingWaterModel.h */,
 				86943B0517E7AB9D00413445 /* CoolingWaterModel.m */,
 				86943B2217F0C65700413445 /* FieldNavigationLink.h */,
 				86943B2317F0C65700413445 /* FieldNavigationLink.m */,

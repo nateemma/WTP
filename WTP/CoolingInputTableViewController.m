@@ -378,7 +378,7 @@ FieldNavigationLink *mCurrNavLink;
     [self addToDictionary:self.inPH            next:self.inChlorides     prev:self.inMAlk];
     [self addToDictionary:self.inChlorides     next:self.inHours         prev:self.inPH];
     [self addToDictionary:self.inHours         next:self.inDays          prev:self.inChlorides];
-    [self addToDictionary:self.inDays          next:self.inDays          prev:self.inHours];
+    [self addToDictionary:self.inDays          next:self.inWeeks          prev:self.inHours];
     [self addToDictionary:self.inWeeks         next:self.inSite          prev:self.inDays];
     
     //[self dumpDictionary];
