@@ -4382,7 +4382,7 @@ Where supported by the device, you can touch the appropriate field to activate t
             <objects>
                 <tableViewController id="HXu-Ih-ybh" customClass="CoolingLiquidsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="i0L-Xp-v4w">
-                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <rect key="frame" x="0.0" y="64" width="480" height="256"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -4390,10 +4390,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                             <tableViewSection headerTitle="Inhibitors" id="OQR-C6-mKj">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="53" id="q65-LY-b1a">
-                                        <rect key="frame" x="0.0" y="46" width="568" height="54"/>
+                                        <rect key="frame" x="0.0" y="46" width="480" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="548" height="52"/>
+                                            <rect key="frame" x="10" y="1" width="460" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Product" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kA-6G-EIq">
@@ -4456,10 +4456,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KHG-hk-LcR">
-                                        <rect key="frame" x="0.0" y="100" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="100" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H207" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-98-uIQ">
@@ -4481,19 +4481,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h207u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hz-bz-Bs8">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="nLz-cE-V2h"/>
+                                                        <constraint firstAttribute="width" constant="64" id="cQR-Yu-RQI"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-Fi-qVh">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="WrY-gC-MPr"/>
-                                                        <constraint firstAttribute="width" constant="212" id="bwd-AK-7nh"/>
+                                                        <constraint firstAttribute="width" constant="128" id="2WI-gN-bEr"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4503,10 +4502,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="0Hz-bz-Bs8" firstAttribute="leading" secondItem="KHG-hk-LcR" secondAttribute="leading" constant="230" type="user" id="A1b-o6-wMm"/>
+                                            <constraint firstItem="0Hz-bz-Bs8" firstAttribute="centerY" secondItem="KHG-hk-LcR" secondAttribute="centerY" constant="-0.5" type="default" id="4JN-Jq-q4a"/>
+                                            <constraint firstItem="0Hz-bz-Bs8" firstAttribute="leading" secondItem="KHG-hk-LcR" secondAttribute="leading" constant="212" type="user" id="A1b-o6-wMm"/>
                                             <constraint firstItem="0Hz-bz-Bs8" firstAttribute="baseline" secondItem="nLn-BO-OPc" secondAttribute="baseline" type="user" id="Ant-qB-vNO"/>
-                                            <constraint firstItem="0Hz-bz-Bs8" firstAttribute="centerY" secondItem="KHG-hk-LcR" secondAttribute="centerY" constant="-1" type="default" id="GCD-W2-Zkg"/>
-                                            <constraint firstAttribute="trailing" secondItem="PeH-Fi-qVh" secondAttribute="trailing" constant="30" type="default" id="H1X-Lz-tR3"/>
                                             <constraint firstItem="PeH-Fi-qVh" firstAttribute="baseline" secondItem="0Hz-bz-Bs8" secondAttribute="baseline" type="default" id="JiB-nA-1Qo"/>
                                             <constraint firstItem="Gfv-98-uIQ" firstAttribute="leading" secondItem="KHG-hk-LcR" secondAttribute="leading" constant="20" type="user" id="XYg-1O-P8L"/>
                                             <constraint firstItem="nLn-BO-OPc" firstAttribute="baseline" secondItem="Gfv-98-uIQ" secondAttribute="baseline" type="default" id="ci5-HR-Lr2"/>
@@ -4514,13 +4512,14 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="nLn-BO-OPc" firstAttribute="top" secondItem="Gfv-98-uIQ" secondAttribute="top" type="default" id="gah-OY-rtm"/>
                                             <constraint firstItem="nLn-BO-OPc" firstAttribute="leading" secondItem="KHG-hk-LcR" secondAttribute="leading" constant="121" id="n16-zj-BZn"/>
                                             <constraint firstItem="PeH-Fi-qVh" firstAttribute="top" secondItem="0Hz-bz-Bs8" secondAttribute="top" type="default" id="xVg-D1-Tvq"/>
+                                            <constraint firstAttribute="trailing" secondItem="PeH-Fi-qVh" secondAttribute="trailing" constant="26" id="zDD-7Y-tY6"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yAY-SJ-LVr">
-                                        <rect key="frame" x="0.0" y="144" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="144" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H2073" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyo-nX-TMZ">
@@ -4542,16 +4541,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h2073u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdM-Yx-KvS">
-                                                    <rect key="frame" x="220" y="11" width="48" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="UCn-Go-2E2"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-SE-hmt">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="212" id="0Zs-Gl-BID"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="Moq-z3-MZq"/>
+                                                        <constraint firstAttribute="width" constant="128" id="syp-d5-Qyt"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4565,20 +4566,20 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="Y9N-SE-hmt" firstAttribute="top" secondItem="cdM-Yx-KvS" secondAttribute="top" type="default" id="D21-y4-kgI"/>
                                             <constraint firstItem="cdM-Yx-KvS" firstAttribute="baseline" secondItem="7gg-FA-j3C" secondAttribute="baseline" type="user" id="D8c-Al-b5j"/>
                                             <constraint firstItem="Vyo-nX-TMZ" firstAttribute="leading" secondItem="yAY-SJ-LVr" secondAttribute="leading" constant="20" type="user" id="FFt-1H-EZb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y9N-SE-hmt" secondAttribute="trailing" constant="26" id="Fdm-9D-yrD"/>
                                             <constraint firstItem="7gg-FA-j3C" firstAttribute="leading" secondItem="yAY-SJ-LVr" secondAttribute="leading" constant="121" id="K8E-Uj-7Tp"/>
-                                            <constraint firstItem="cdM-Yx-KvS" firstAttribute="centerY" secondItem="yAY-SJ-LVr" secondAttribute="centerY" constant="-1" type="default" id="KAG-J3-ziI"/>
-                                            <constraint firstItem="cdM-Yx-KvS" firstAttribute="leading" secondItem="yAY-SJ-LVr" secondAttribute="leading" constant="230" type="user" id="WMb-pr-EGM"/>
-                                            <constraint firstAttribute="trailing" secondItem="Y9N-SE-hmt" secondAttribute="trailing" constant="30" type="default" id="abd-hk-BaD"/>
+                                            <constraint firstItem="Y9N-SE-hmt" firstAttribute="centerY" secondItem="yAY-SJ-LVr" secondAttribute="centerY" constant="-0.5" type="default" id="Lx3-Po-vq3"/>
+                                            <constraint firstItem="cdM-Yx-KvS" firstAttribute="leading" secondItem="yAY-SJ-LVr" secondAttribute="leading" constant="212" type="user" id="WMb-pr-EGM"/>
                                             <constraint firstItem="cdM-Yx-KvS" firstAttribute="top" secondItem="7gg-FA-j3C" secondAttribute="top" type="default" id="nSZ-Mf-cCt"/>
                                             <constraint firstItem="7gg-FA-j3C" firstAttribute="top" secondItem="Vyo-nX-TMZ" secondAttribute="top" type="default" id="rr5-kT-VLA"/>
                                             <constraint firstItem="Y9N-SE-hmt" firstAttribute="baseline" secondItem="cdM-Yx-KvS" secondAttribute="baseline" type="default" id="sQO-kZ-Zhc"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1Zo-Po-E4I">
-                                        <rect key="frame" x="0.0" y="188" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="188" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H280" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKK-f7-MBh">
@@ -4600,19 +4601,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h280u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QE-r3-ZzM">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="5rl-Hy-Xrs"/>
+                                                        <constraint firstAttribute="width" constant="64" id="TQu-zz-U0D"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale/corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VY8-16-CoX">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="dZ5-Df-V1t"/>
-                                                        <constraint firstAttribute="width" constant="212" id="hMC-5V-i9u"/>
+                                                        <constraint firstAttribute="width" constant="128" id="3SY-wv-2i0"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4622,13 +4622,13 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="4QE-r3-ZzM" firstAttribute="centerY" secondItem="1Zo-Po-E4I" secondAttribute="centerY" constant="-0.5" type="default" id="59w-Fw-grH"/>
+                                            <constraint firstAttribute="trailing" secondItem="VY8-16-CoX" secondAttribute="trailing" constant="26" id="68Z-rw-S6M"/>
                                             <constraint firstItem="VY8-16-CoX" firstAttribute="top" secondItem="4QE-r3-ZzM" secondAttribute="top" type="default" id="9QO-gs-w7M"/>
                                             <constraint firstItem="ffL-4O-gga" firstAttribute="baseline" secondItem="zKK-f7-MBh" secondAttribute="baseline" type="default" id="Hyg-TQ-bgy"/>
                                             <constraint firstItem="VY8-16-CoX" firstAttribute="baseline" secondItem="4QE-r3-ZzM" secondAttribute="baseline" type="default" id="LsX-5R-SYk"/>
-                                            <constraint firstItem="4QE-r3-ZzM" firstAttribute="leading" secondItem="1Zo-Po-E4I" secondAttribute="leading" constant="230" type="user" id="MhC-OB-1S5"/>
+                                            <constraint firstItem="4QE-r3-ZzM" firstAttribute="leading" secondItem="1Zo-Po-E4I" secondAttribute="leading" constant="212" type="user" id="MhC-OB-1S5"/>
+                                            <constraint firstItem="4QE-r3-ZzM" firstAttribute="centerY" secondItem="1Zo-Po-E4I" secondAttribute="centerY" constant="-0.5" type="default" id="UbD-c9-qWm"/>
                                             <constraint firstItem="zKK-f7-MBh" firstAttribute="leading" secondItem="1Zo-Po-E4I" secondAttribute="leading" constant="20" type="user" id="cr3-Dg-HZg"/>
-                                            <constraint firstAttribute="trailing" secondItem="VY8-16-CoX" secondAttribute="trailing" constant="30" type="default" id="es2-Xm-vAm"/>
                                             <constraint firstItem="4QE-r3-ZzM" firstAttribute="top" secondItem="ffL-4O-gga" secondAttribute="top" type="default" id="heB-yU-HYr"/>
                                             <constraint firstItem="ffL-4O-gga" firstAttribute="leading" secondItem="1Zo-Po-E4I" secondAttribute="leading" constant="121" id="p58-Cp-yVV"/>
                                             <constraint firstItem="ffL-4O-gga" firstAttribute="top" secondItem="zKK-f7-MBh" secondAttribute="top" type="default" id="wv3-oc-la3"/>
@@ -4636,10 +4636,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="M4g-xQ-msE">
-                                        <rect key="frame" x="0.0" y="232" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="232" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H2805" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iJ-5D-ezl">
@@ -4661,16 +4661,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h2805u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-1C-vf6">
-                                                    <rect key="frame" x="220" y="11" width="48" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="tJO-Ac-2iG"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale/corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGS-gG-TEE">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="O0Y-8H-ewA"/>
-                                                        <constraint firstAttribute="width" constant="212" id="zo8-7X-1mx"/>
+                                                        <constraint firstAttribute="width" constant="128" id="wZb-8f-gY9"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4685,19 +4687,19 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="2Ld-Jh-MII" firstAttribute="top" secondItem="5iJ-5D-ezl" secondAttribute="top" type="default" id="Afs-2t-d44"/>
                                             <constraint firstItem="5dU-1C-vf6" firstAttribute="top" secondItem="2Ld-Jh-MII" secondAttribute="top" type="default" id="OPA-dc-1m0"/>
                                             <constraint firstItem="KGS-gG-TEE" firstAttribute="top" secondItem="5dU-1C-vf6" secondAttribute="top" type="default" id="bxl-dT-pFR"/>
-                                            <constraint firstItem="5dU-1C-vf6" firstAttribute="leading" secondItem="M4g-xQ-msE" secondAttribute="leading" constant="230" type="user" id="ik9-2x-43f"/>
+                                            <constraint firstItem="5dU-1C-vf6" firstAttribute="leading" secondItem="M4g-xQ-msE" secondAttribute="leading" constant="212" type="user" id="ik9-2x-43f"/>
                                             <constraint firstItem="2Ld-Jh-MII" firstAttribute="baseline" secondItem="5iJ-5D-ezl" secondAttribute="baseline" type="default" id="nkL-2Y-qVC"/>
                                             <constraint firstItem="5dU-1C-vf6" firstAttribute="baseline" secondItem="2Ld-Jh-MII" secondAttribute="baseline" type="user" id="qsJ-Tw-ZG9"/>
                                             <constraint firstItem="5iJ-5D-ezl" firstAttribute="leading" secondItem="M4g-xQ-msE" secondAttribute="leading" constant="20" type="user" id="rOk-Am-Lxs"/>
-                                            <constraint firstAttribute="trailing" secondItem="KGS-gG-TEE" secondAttribute="trailing" constant="30" type="default" id="sMv-TI-EcS"/>
+                                            <constraint firstAttribute="trailing" secondItem="KGS-gG-TEE" secondAttribute="trailing" constant="26" id="yrr-Mz-y0i"/>
                                             <constraint firstItem="KGS-gG-TEE" firstAttribute="baseline" secondItem="5dU-1C-vf6" secondAttribute="baseline" type="default" id="yzn-3t-pg1"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SqL-SU-f2O">
-                                        <rect key="frame" x="0.0" y="276" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="276" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H390" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCW-hF-IEp">
@@ -4719,19 +4721,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h390u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlH-kj-rhc">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="aYB-Yo-oyW"/>
+                                                        <constraint firstAttribute="width" constant="64" id="cAy-RO-hip"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3H-Mp-OIo">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="212" id="FQI-cK-3Z2"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="NVG-3S-S7P"/>
+                                                        <constraint firstAttribute="width" constant="128" id="V8q-I3-vYS"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4745,20 +4746,20 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="UCW-hF-IEp" firstAttribute="leading" secondItem="SqL-SU-f2O" secondAttribute="leading" constant="20" type="user" id="7O6-o6-Nc3"/>
                                             <constraint firstItem="wqz-St-jxS" firstAttribute="baseline" secondItem="UCW-hF-IEp" secondAttribute="baseline" type="default" id="Adu-pq-Ez5"/>
                                             <constraint firstItem="wqz-St-jxS" firstAttribute="top" secondItem="UCW-hF-IEp" secondAttribute="top" type="default" id="Fce-xe-Xog"/>
+                                            <constraint firstAttribute="trailing" secondItem="O3H-Mp-OIo" secondAttribute="trailing" constant="26" id="SdH-xa-JMJ"/>
                                             <constraint firstItem="O3H-Mp-OIo" firstAttribute="top" secondItem="NlH-kj-rhc" secondAttribute="top" type="default" id="bJa-5X-2Tx"/>
                                             <constraint firstItem="O3H-Mp-OIo" firstAttribute="baseline" secondItem="NlH-kj-rhc" secondAttribute="baseline" type="default" id="bdJ-K9-EuL"/>
-                                            <constraint firstItem="NlH-kj-rhc" firstAttribute="leading" secondItem="SqL-SU-f2O" secondAttribute="leading" constant="230" type="user" id="eOe-DX-vJS"/>
+                                            <constraint firstItem="NlH-kj-rhc" firstAttribute="leading" secondItem="SqL-SU-f2O" secondAttribute="leading" constant="212" type="user" id="eOe-DX-vJS"/>
                                             <constraint firstItem="NlH-kj-rhc" firstAttribute="top" secondItem="wqz-St-jxS" secondAttribute="top" type="default" id="gil-DJ-B1V"/>
+                                            <constraint firstItem="NlH-kj-rhc" firstAttribute="centerY" secondItem="SqL-SU-f2O" secondAttribute="centerY" constant="-0.5" type="default" id="i13-6d-Mdd"/>
                                             <constraint firstItem="wqz-St-jxS" firstAttribute="leading" secondItem="SqL-SU-f2O" secondAttribute="leading" constant="121" id="iRy-9T-uiO"/>
-                                            <constraint firstAttribute="trailing" secondItem="O3H-Mp-OIo" secondAttribute="trailing" constant="30" type="default" id="pFv-Dp-tji"/>
-                                            <constraint firstItem="NlH-kj-rhc" firstAttribute="centerY" secondItem="SqL-SU-f2O" secondAttribute="centerY" constant="-1" type="default" id="xg5-n6-XwX"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BHT-RY-upS">
-                                        <rect key="frame" x="0.0" y="320" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="320" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H3905" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khe-cm-oHG">
@@ -4780,16 +4781,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h3905u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoI-Tc-xva">
-                                                    <rect key="frame" x="220" y="11" width="48" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="7vO-Ul-4EB"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd4-ho-dGQ">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="212" id="4Jk-WL-9Kg"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="Nr6-HT-3Bg"/>
+                                                        <constraint firstAttribute="width" constant="128" id="BVa-zU-CJf"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4800,23 +4803,23 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="fj6-uz-oXt" firstAttribute="leading" secondItem="BHT-RY-upS" secondAttribute="leading" constant="121" id="1TG-5A-6fS"/>
-                                            <constraint firstItem="NoI-Tc-xva" firstAttribute="centerY" secondItem="BHT-RY-upS" secondAttribute="centerY" constant="-0.5" type="default" id="3Qm-oo-ZxA"/>
                                             <constraint firstItem="fj6-uz-oXt" firstAttribute="top" secondItem="khe-cm-oHG" secondAttribute="top" type="default" id="7fe-PZ-gtG"/>
+                                            <constraint firstItem="NoI-Tc-xva" firstAttribute="centerY" secondItem="BHT-RY-upS" secondAttribute="centerY" constant="-0.5" type="default" id="D4o-YR-W4s"/>
                                             <constraint firstItem="NoI-Tc-xva" firstAttribute="baseline" secondItem="fj6-uz-oXt" secondAttribute="baseline" type="user" id="VkF-SJ-hcz"/>
                                             <constraint firstItem="NoI-Tc-xva" firstAttribute="top" secondItem="fj6-uz-oXt" secondAttribute="top" type="default" id="cbv-eO-3hC"/>
                                             <constraint firstItem="Dd4-ho-dGQ" firstAttribute="baseline" secondItem="NoI-Tc-xva" secondAttribute="baseline" type="default" id="gPi-Ux-hhB"/>
-                                            <constraint firstItem="NoI-Tc-xva" firstAttribute="leading" secondItem="BHT-RY-upS" secondAttribute="leading" constant="230" type="user" id="hww-oN-fzJ"/>
+                                            <constraint firstItem="NoI-Tc-xva" firstAttribute="leading" secondItem="BHT-RY-upS" secondAttribute="leading" constant="212" type="user" id="hww-oN-fzJ"/>
                                             <constraint firstItem="fj6-uz-oXt" firstAttribute="baseline" secondItem="khe-cm-oHG" secondAttribute="baseline" type="default" id="iez-wC-aTy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dd4-ho-dGQ" secondAttribute="trailing" constant="26" id="mHe-Vh-ZeM"/>
                                             <constraint firstItem="Dd4-ho-dGQ" firstAttribute="top" secondItem="NoI-Tc-xva" secondAttribute="top" type="default" id="pFa-5s-S4s"/>
                                             <constraint firstItem="khe-cm-oHG" firstAttribute="leading" secondItem="BHT-RY-upS" secondAttribute="leading" constant="20" type="user" id="qOy-du-QOB"/>
-                                            <constraint firstAttribute="trailing" secondItem="Dd4-ho-dGQ" secondAttribute="trailing" constant="30" type="default" id="yFF-R7-BNq"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="a4t-FJ-pbn">
-                                        <rect key="frame" x="0.0" y="364" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="364" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H391" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6c-eh-G8u">
@@ -4838,19 +4841,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h391u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfa-ZT-bI0">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="48p-6c-dX0"/>
+                                                        <constraint firstAttribute="width" constant="64" id="O1l-cA-t3n"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="674-9o-FYJ">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="af7-B3-zzi"/>
-                                                        <constraint firstAttribute="width" constant="212" id="cIG-eO-AdK"/>
+                                                        <constraint firstAttribute="width" constant="128" id="Dic-34-JES"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4862,22 +4864,22 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         <constraints>
                                             <constraint firstItem="IwR-Vp-FUb" firstAttribute="top" secondItem="G6c-eh-G8u" secondAttribute="top" type="default" id="2mu-yx-1ZR"/>
                                             <constraint firstItem="dfa-ZT-bI0" firstAttribute="baseline" secondItem="IwR-Vp-FUb" secondAttribute="baseline" type="user" id="6CN-9N-yZq"/>
-                                            <constraint firstItem="dfa-ZT-bI0" firstAttribute="leading" secondItem="a4t-FJ-pbn" secondAttribute="leading" constant="230" type="user" id="GAQ-M2-eAR"/>
+                                            <constraint firstItem="dfa-ZT-bI0" firstAttribute="leading" secondItem="a4t-FJ-pbn" secondAttribute="leading" constant="212" type="user" id="GAQ-M2-eAR"/>
                                             <constraint firstItem="IwR-Vp-FUb" firstAttribute="baseline" secondItem="G6c-eh-G8u" secondAttribute="baseline" type="default" id="Ghn-5X-bSP"/>
                                             <constraint firstItem="674-9o-FYJ" firstAttribute="top" secondItem="dfa-ZT-bI0" secondAttribute="top" type="default" id="MDq-ir-Ojl"/>
+                                            <constraint firstAttribute="trailing" secondItem="674-9o-FYJ" secondAttribute="trailing" constant="26" id="MaW-KZ-WML"/>
+                                            <constraint firstItem="674-9o-FYJ" firstAttribute="centerY" secondItem="a4t-FJ-pbn" secondAttribute="centerY" constant="-0.5" type="default" id="Ztr-6M-Hzn"/>
                                             <constraint firstItem="G6c-eh-G8u" firstAttribute="leading" secondItem="a4t-FJ-pbn" secondAttribute="leading" constant="20" type="user" id="hgH-Wv-Ald"/>
                                             <constraint firstItem="dfa-ZT-bI0" firstAttribute="top" secondItem="IwR-Vp-FUb" secondAttribute="top" type="default" id="lLq-YL-Tgz"/>
-                                            <constraint firstAttribute="trailing" secondItem="674-9o-FYJ" secondAttribute="trailing" constant="30" type="default" id="maZ-6D-WT7"/>
                                             <constraint firstItem="674-9o-FYJ" firstAttribute="baseline" secondItem="dfa-ZT-bI0" secondAttribute="baseline" type="default" id="n2O-FL-7ii"/>
                                             <constraint firstItem="IwR-Vp-FUb" firstAttribute="leading" secondItem="a4t-FJ-pbn" secondAttribute="leading" constant="121" id="vF1-S9-qow"/>
-                                            <constraint firstItem="dfa-ZT-bI0" firstAttribute="centerY" secondItem="a4t-FJ-pbn" secondAttribute="centerY" constant="-1" type="default" id="w37-nh-W9Z"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TMc-IK-if4">
-                                        <rect key="frame" x="0.0" y="408" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="408" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H423" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRv-2c-MhG">
@@ -4899,19 +4901,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h423u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-an-kKt">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="Rz8-cy-kME"/>
+                                                        <constraint firstAttribute="width" constant="64" id="g43-q8-u0D"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale/corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNJ-N7-VXI">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="212" id="cLT-Pj-X95"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="y6t-Im-dfH"/>
+                                                        <constraint firstAttribute="width" constant="128" id="haH-nF-AaN"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4921,24 +4922,24 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="HNJ-N7-VXI" secondAttribute="trailing" constant="26" id="0bl-jk-gwS"/>
                                             <constraint firstItem="MZG-an-kKt" firstAttribute="baseline" secondItem="ejN-to-Bn4" secondAttribute="baseline" type="user" id="ESY-lK-riX"/>
                                             <constraint firstItem="MZG-an-kKt" firstAttribute="top" secondItem="ejN-to-Bn4" secondAttribute="top" type="default" id="FCB-Ld-Gi1"/>
                                             <constraint firstItem="ejN-to-Bn4" firstAttribute="leading" secondItem="TMc-IK-if4" secondAttribute="leading" constant="121" id="GGG-XJ-tnR"/>
-                                            <constraint firstItem="MZG-an-kKt" firstAttribute="leading" secondItem="TMc-IK-if4" secondAttribute="leading" constant="230" type="user" id="LPq-3h-J6H"/>
-                                            <constraint firstItem="MZG-an-kKt" firstAttribute="centerY" secondItem="TMc-IK-if4" secondAttribute="centerY" constant="-1" type="default" id="OEl-ly-Pu1"/>
+                                            <constraint firstItem="MZG-an-kKt" firstAttribute="leading" secondItem="TMc-IK-if4" secondAttribute="leading" constant="212" type="user" id="LPq-3h-J6H"/>
                                             <constraint firstItem="HNJ-N7-VXI" firstAttribute="baseline" secondItem="MZG-an-kKt" secondAttribute="baseline" type="default" id="QW3-1d-itb"/>
-                                            <constraint firstAttribute="trailing" secondItem="HNJ-N7-VXI" secondAttribute="trailing" constant="30" type="default" id="Qax-I9-bLx"/>
                                             <constraint firstItem="ejN-to-Bn4" firstAttribute="top" secondItem="BRv-2c-MhG" secondAttribute="top" type="default" id="a6Q-FN-Z7w"/>
+                                            <constraint firstItem="MZG-an-kKt" firstAttribute="centerY" secondItem="TMc-IK-if4" secondAttribute="centerY" constant="-0.5" type="default" id="je6-B1-zpC"/>
                                             <constraint firstItem="ejN-to-Bn4" firstAttribute="baseline" secondItem="BRv-2c-MhG" secondAttribute="baseline" type="default" id="jwG-AX-TWG"/>
                                             <constraint firstItem="HNJ-N7-VXI" firstAttribute="top" secondItem="MZG-an-kKt" secondAttribute="top" type="default" id="nGc-zg-gQ5"/>
                                             <constraint firstItem="BRv-2c-MhG" firstAttribute="leading" secondItem="TMc-IK-if4" secondAttribute="leading" constant="20" type="user" id="oUd-pT-4pq"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ySF-YQ-F8e">
-                                        <rect key="frame" x="0.0" y="452" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="452" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H425" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpb-2l-OyG">
@@ -4960,19 +4961,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h425u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlh-dO-pPf">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="CZE-Pj-oRp"/>
+                                                        <constraint firstAttribute="width" constant="64" id="OVP-Wk-hSU"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBg-FN-wjF">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="212" id="WTl-rh-9dt"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="XT7-Ph-Z6E"/>
+                                                        <constraint firstAttribute="width" constant="128" id="2To-HW-ob0"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4983,23 +4983,23 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="Qlh-dO-pPf" firstAttribute="top" secondItem="J0B-Rp-We3" secondAttribute="top" type="default" id="5QF-6t-Qyz"/>
-                                            <constraint firstItem="Qlh-dO-pPf" firstAttribute="centerY" secondItem="ySF-YQ-F8e" secondAttribute="centerY" constant="-0.5" type="default" id="6KS-U8-nfd"/>
                                             <constraint firstItem="J0B-Rp-We3" firstAttribute="baseline" secondItem="lpb-2l-OyG" secondAttribute="baseline" type="default" id="B3o-6M-2dT"/>
+                                            <constraint firstAttribute="trailing" secondItem="WBg-FN-wjF" secondAttribute="trailing" constant="26" id="Bpd-A8-R3j"/>
                                             <constraint firstItem="WBg-FN-wjF" firstAttribute="baseline" secondItem="Qlh-dO-pPf" secondAttribute="baseline" type="default" id="Ffn-ol-eOg"/>
                                             <constraint firstItem="J0B-Rp-We3" firstAttribute="top" secondItem="lpb-2l-OyG" secondAttribute="top" type="default" id="Hdh-eu-195"/>
+                                            <constraint firstItem="WBg-FN-wjF" firstAttribute="centerY" secondItem="ySF-YQ-F8e" secondAttribute="centerY" constant="-0.5" type="default" id="P9R-Ve-hwZ"/>
                                             <constraint firstItem="J0B-Rp-We3" firstAttribute="leading" secondItem="ySF-YQ-F8e" secondAttribute="leading" constant="121" id="Tb5-Gt-gCU"/>
                                             <constraint firstItem="Qlh-dO-pPf" firstAttribute="baseline" secondItem="J0B-Rp-We3" secondAttribute="baseline" type="user" id="bFM-LH-m7M"/>
-                                            <constraint firstAttribute="trailing" secondItem="WBg-FN-wjF" secondAttribute="trailing" constant="30" type="default" id="bL4-Ma-3Ca"/>
-                                            <constraint firstItem="Qlh-dO-pPf" firstAttribute="leading" secondItem="ySF-YQ-F8e" secondAttribute="leading" constant="230" type="user" id="l3p-WV-YN9"/>
+                                            <constraint firstItem="Qlh-dO-pPf" firstAttribute="leading" secondItem="ySF-YQ-F8e" secondAttribute="leading" constant="212" type="user" id="l3p-WV-YN9"/>
                                             <constraint firstItem="lpb-2l-OyG" firstAttribute="leading" secondItem="ySF-YQ-F8e" secondAttribute="leading" constant="20" type="user" id="xbR-wk-HG6"/>
                                             <constraint firstItem="WBg-FN-wjF" firstAttribute="top" secondItem="Qlh-dO-pPf" secondAttribute="top" type="default" id="yLs-hi-R98"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kfV-zK-NGW">
-                                        <rect key="frame" x="0.0" y="496" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="496" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H4255" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z06-Oc-NGt">
@@ -5021,16 +5021,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h4255u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvw-vc-l4q">
-                                                    <rect key="frame" x="220" y="11" width="48" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="p98-8L-tJi"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXS-3I-uUR">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="bbd-EW-BGF"/>
-                                                        <constraint firstAttribute="width" constant="212" id="yWi-h1-Ijw"/>
+                                                        <constraint firstAttribute="width" constant="128" id="eMd-Mj-Mrp"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5041,12 +5043,12 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="eXS-3I-uUR" firstAttribute="baseline" secondItem="Bvw-vc-l4q" secondAttribute="baseline" type="default" id="4bP-bJ-ult"/>
-                                            <constraint firstAttribute="trailing" secondItem="eXS-3I-uUR" secondAttribute="trailing" constant="30" type="default" id="HOc-oF-Ra7"/>
+                                            <constraint firstItem="eXS-3I-uUR" firstAttribute="centerY" secondItem="kfV-zK-NGW" secondAttribute="centerY" constant="-0.5" type="default" id="4p7-Nl-N9x"/>
+                                            <constraint firstAttribute="trailing" secondItem="eXS-3I-uUR" secondAttribute="trailing" constant="26" id="AFm-zT-S5b"/>
                                             <constraint firstItem="0DB-4g-XT0" firstAttribute="baseline" secondItem="z06-Oc-NGt" secondAttribute="baseline" type="default" id="PUP-Y0-Iua"/>
                                             <constraint firstItem="Bvw-vc-l4q" firstAttribute="top" secondItem="0DB-4g-XT0" secondAttribute="top" type="default" id="THk-Oi-bT9"/>
-                                            <constraint firstItem="Bvw-vc-l4q" firstAttribute="leading" secondItem="kfV-zK-NGW" secondAttribute="leading" constant="230" type="user" id="ZvK-PU-j54"/>
+                                            <constraint firstItem="Bvw-vc-l4q" firstAttribute="leading" secondItem="kfV-zK-NGW" secondAttribute="leading" constant="212" type="user" id="ZvK-PU-j54"/>
                                             <constraint firstItem="0DB-4g-XT0" firstAttribute="leading" secondItem="kfV-zK-NGW" secondAttribute="leading" constant="121" id="cK5-QS-rKb"/>
-                                            <constraint firstItem="Bvw-vc-l4q" firstAttribute="centerY" secondItem="kfV-zK-NGW" secondAttribute="centerY" constant="-0.5" type="default" id="hxZ-s8-w0h"/>
                                             <constraint firstItem="Bvw-vc-l4q" firstAttribute="baseline" secondItem="0DB-4g-XT0" secondAttribute="baseline" type="user" id="jB8-Kw-LYV"/>
                                             <constraint firstItem="eXS-3I-uUR" firstAttribute="top" secondItem="Bvw-vc-l4q" secondAttribute="top" type="default" id="mLZ-Hj-Hx5"/>
                                             <constraint firstItem="0DB-4g-XT0" firstAttribute="top" secondItem="z06-Oc-NGt" secondAttribute="top" type="default" id="peb-zN-E5o"/>
@@ -5054,10 +5056,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="llH-B1-DFH">
-                                        <rect key="frame" x="0.0" y="540" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="540" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H535" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYE-Ul-Dtz">
@@ -5079,19 +5081,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h535u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKK-Tp-P3g">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="Uqd-j1-9cM"/>
+                                                        <constraint firstAttribute="width" constant="64" id="z2x-wX-G3X"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale/corrosion inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS5-Tb-ZNI">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="8dN-G2-k9j"/>
-                                                        <constraint firstAttribute="width" constant="212" id="LfR-jl-MgB"/>
+                                                        <constraint firstAttribute="width" constant="128" id="nl1-G5-vg7"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5101,24 +5102,24 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="eKK-Tp-P3g" firstAttribute="leading" secondItem="llH-B1-DFH" secondAttribute="leading" constant="230" type="user" id="5s1-PB-Sem"/>
+                                            <constraint firstItem="eKK-Tp-P3g" firstAttribute="leading" secondItem="llH-B1-DFH" secondAttribute="leading" constant="212" type="user" id="5s1-PB-Sem"/>
                                             <constraint firstItem="k6K-Dv-k8m" firstAttribute="baseline" secondItem="VYE-Ul-Dtz" secondAttribute="baseline" type="default" id="9fW-Aq-M3E"/>
                                             <constraint firstItem="eKK-Tp-P3g" firstAttribute="baseline" secondItem="k6K-Dv-k8m" secondAttribute="baseline" type="user" id="BYx-96-jmd"/>
+                                            <constraint firstAttribute="trailing" secondItem="rS5-Tb-ZNI" secondAttribute="trailing" constant="26" id="IbY-v8-R6h"/>
                                             <constraint firstItem="k6K-Dv-k8m" firstAttribute="leading" secondItem="llH-B1-DFH" secondAttribute="leading" constant="121" id="RRy-CO-5xH"/>
                                             <constraint firstItem="VYE-Ul-Dtz" firstAttribute="leading" secondItem="llH-B1-DFH" secondAttribute="leading" constant="20" type="user" id="UdM-7U-Jyn"/>
-                                            <constraint firstItem="eKK-Tp-P3g" firstAttribute="centerY" secondItem="llH-B1-DFH" secondAttribute="centerY" constant="-0.5" type="default" id="XjF-oZ-20j"/>
                                             <constraint firstItem="rS5-Tb-ZNI" firstAttribute="baseline" secondItem="eKK-Tp-P3g" secondAttribute="baseline" type="default" id="e1M-Nb-Hsh"/>
-                                            <constraint firstAttribute="trailing" secondItem="rS5-Tb-ZNI" secondAttribute="trailing" constant="30" type="default" id="gY3-Kx-N4x"/>
+                                            <constraint firstItem="eKK-Tp-P3g" firstAttribute="centerY" secondItem="llH-B1-DFH" secondAttribute="centerY" constant="-0.5" type="default" id="og2-WO-H9f"/>
                                             <constraint firstItem="eKK-Tp-P3g" firstAttribute="top" secondItem="k6K-Dv-k8m" secondAttribute="top" type="default" id="rJB-Tj-93i"/>
                                             <constraint firstItem="rS5-Tb-ZNI" firstAttribute="top" secondItem="eKK-Tp-P3g" secondAttribute="top" type="default" id="vPM-uy-eLp"/>
                                             <constraint firstItem="k6K-Dv-k8m" firstAttribute="top" secondItem="VYE-Ul-Dtz" secondAttribute="top" type="default" id="wly-Ty-ktb"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ahx-uu-sGB">
-                                        <rect key="frame" x="0.0" y="584" width="568" height="45"/>
+                                        <rect key="frame" x="0.0" y="584" width="480" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP H874" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmy-Aa-EAP">
@@ -5140,19 +5141,18 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="h874u" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxG-Y9-aq2">
-                                                    <rect key="frame" x="220" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="202" y="11" width="64" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="47" type="user" id="yeW-6F-hii"/>
+                                                        <constraint firstAttribute="width" constant="64" id="8wo-8a-RkG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale inhibitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TO-V2-57l">
-                                                    <rect key="frame" x="316" y="11" width="212" height="21"/>
+                                                    <rect key="frame" x="316" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="212" id="LlV-yh-rIl"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" type="user" id="W80-BB-x2o"/>
+                                                        <constraint firstAttribute="width" constant="128" id="W6D-jZ-Apf"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5164,14 +5164,14 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         <constraints>
                                             <constraint firstItem="xOV-8D-qFh" firstAttribute="leading" secondItem="Ahx-uu-sGB" secondAttribute="leading" constant="121" id="Ccl-No-jFE"/>
                                             <constraint firstItem="0TO-V2-57l" firstAttribute="top" secondItem="mxG-Y9-aq2" secondAttribute="top" type="default" id="Ei8-pi-xoR"/>
+                                            <constraint firstAttribute="trailing" secondItem="0TO-V2-57l" secondAttribute="trailing" constant="26" id="Emq-nX-6WX"/>
                                             <constraint firstItem="xOV-8D-qFh" firstAttribute="baseline" secondItem="Gmy-Aa-EAP" secondAttribute="baseline" type="default" id="Fgj-d2-k4m"/>
-                                            <constraint firstAttribute="trailing" secondItem="0TO-V2-57l" secondAttribute="trailing" constant="30" type="default" id="YV3-tf-53B"/>
-                                            <constraint firstItem="mxG-Y9-aq2" firstAttribute="centerY" secondItem="Ahx-uu-sGB" secondAttribute="centerY" constant="-1" type="default" id="Z2m-4a-1ua"/>
-                                            <constraint firstItem="mxG-Y9-aq2" firstAttribute="leading" secondItem="Ahx-uu-sGB" secondAttribute="leading" constant="230" type="user" id="cey-ci-ijj"/>
+                                            <constraint firstItem="mxG-Y9-aq2" firstAttribute="leading" secondItem="Ahx-uu-sGB" secondAttribute="leading" constant="212" type="user" id="cey-ci-ijj"/>
                                             <constraint firstItem="mxG-Y9-aq2" firstAttribute="baseline" secondItem="xOV-8D-qFh" secondAttribute="baseline" type="user" id="d94-Zz-mz6"/>
                                             <constraint firstItem="mxG-Y9-aq2" firstAttribute="top" secondItem="xOV-8D-qFh" secondAttribute="top" type="default" id="gfh-hJ-PYs"/>
                                             <constraint firstItem="xOV-8D-qFh" firstAttribute="top" secondItem="Gmy-Aa-EAP" secondAttribute="top" type="default" id="lY2-66-paA"/>
                                             <constraint firstItem="0TO-V2-57l" firstAttribute="baseline" secondItem="mxG-Y9-aq2" secondAttribute="baseline" type="default" id="o6p-r6-gdQ"/>
+                                            <constraint firstItem="0TO-V2-57l" firstAttribute="centerY" secondItem="Ahx-uu-sGB" secondAttribute="centerY" constant="-1" type="default" id="qSR-33-nHX"/>
                                             <constraint firstItem="Gmy-Aa-EAP" firstAttribute="leading" secondItem="Ahx-uu-sGB" secondAttribute="leading" constant="20" type="user" id="zU6-ov-ZR6"/>
                                         </constraints>
                                     </tableViewCell>
@@ -5180,10 +5180,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                             <tableViewSection headerTitle="Biocides (Non-Oxidising)" id="782-HT-Yts">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="53" id="201-1h-ILx">
-                                        <rect key="frame" x="0.0" y="675" width="568" height="54"/>
+                                        <rect key="frame" x="0.0" y="675" width="480" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="548" height="52"/>
+                                            <rect key="frame" x="10" y="1" width="460" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Product" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fef-dk-hyD">
@@ -5242,10 +5242,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nxw-wy-Qbn">
-                                        <rect key="frame" x="0.0" y="729" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="729" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C31 IsoT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93P-Fo-Nnm">
@@ -5275,9 +5275,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Isothiazalones" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-L6-YKN">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="tgy-3A-Y0E"/>
+                                                        <constraint firstAttribute="width" constant="128" id="EQx-7M-ho6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5288,11 +5288,11 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="gVh-vl-pIm" firstAttribute="top" secondItem="S2L-d5-BDr" secondAttribute="top" type="default" id="5jC-iy-YzV"/>
-                                            <constraint firstAttribute="trailing" secondItem="PsU-L6-YKN" secondAttribute="trailing" constant="30" type="default" id="6VJ-3p-ODR"/>
                                             <constraint firstItem="gVh-vl-pIm" firstAttribute="baseline" secondItem="S2L-d5-BDr" secondAttribute="baseline" type="default" id="9DR-r3-eHx"/>
                                             <constraint firstItem="PsU-L6-YKN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nxw-wy-Qbn" secondAttribute="leading" constant="280" type="user" id="EKw-zC-DF2"/>
-                                            <constraint firstItem="PsU-L6-YKN" firstAttribute="centerY" secondItem="nxw-wy-Qbn" secondAttribute="centerY" constant="-1" type="default" id="JAA-uA-b7s"/>
+                                            <constraint firstAttribute="trailing" secondItem="PsU-L6-YKN" secondAttribute="trailing" constant="30" type="default" id="EhW-F9-LtW"/>
                                             <constraint firstItem="93P-Fo-Nnm" firstAttribute="leading" secondItem="nxw-wy-Qbn" secondAttribute="leading" constant="25" type="user" id="U6C-E3-pN1"/>
+                                            <constraint firstItem="PsU-L6-YKN" firstAttribute="centerY" secondItem="nxw-wy-Qbn" secondAttribute="centerY" constant="-0.5" type="default" id="UiB-bm-j4V"/>
                                             <constraint firstItem="S2L-d5-BDr" firstAttribute="leading" secondItem="nxw-wy-Qbn" secondAttribute="leading" constant="142" id="WIT-8S-N9Q"/>
                                             <constraint firstItem="S2L-d5-BDr" firstAttribute="top" secondItem="93P-Fo-Nnm" secondAttribute="top" type="default" id="ch2-Sd-cQm"/>
                                             <constraint firstItem="PsU-L6-YKN" firstAttribute="top" secondItem="gVh-vl-pIm" secondAttribute="top" type="default" id="doh-XF-in7"/>
@@ -5303,10 +5303,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tYF-jl-yFb">
-                                        <rect key="frame" x="0.0" y="773" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="773" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C32 IsoT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvw-4O-wqI">
@@ -5336,9 +5336,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Isothiazalones" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHM-lK-1a0">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="Ykx-7t-f12"/>
+                                                        <constraint firstAttribute="width" constant="128" id="tUW-Qw-x4M"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5352,22 +5352,22 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="2vm-ZS-qmJ" firstAttribute="top" secondItem="LFt-BR-67S" secondAttribute="top" type="default" id="Aon-AJ-XOj"/>
                                             <constraint firstItem="2vm-ZS-qmJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tYF-jl-yFb" secondAttribute="leading" constant="220" type="user" id="B8C-ON-GId"/>
                                             <constraint firstItem="Dvw-4O-wqI" firstAttribute="leading" secondItem="tYF-jl-yFb" secondAttribute="leading" constant="25" type="user" id="BeD-uP-UqV"/>
+                                            <constraint firstItem="YHM-lK-1a0" firstAttribute="centerY" secondItem="tYF-jl-yFb" secondAttribute="centerY" constant="-0.5" type="default" id="QUL-xG-OC6"/>
                                             <constraint firstItem="YHM-lK-1a0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tYF-jl-yFb" secondAttribute="leading" constant="280" type="user" id="SJH-Dm-aTO"/>
                                             <constraint firstItem="LFt-BR-67S" firstAttribute="top" secondItem="Dvw-4O-wqI" secondAttribute="top" type="default" id="UPb-qw-n9N"/>
                                             <constraint firstItem="YHM-lK-1a0" firstAttribute="baseline" secondItem="2vm-ZS-qmJ" secondAttribute="baseline" type="default" id="Ysp-JY-dMe"/>
                                             <constraint firstItem="2vm-ZS-qmJ" firstAttribute="leading" secondItem="tYF-jl-yFb" secondAttribute="leading" constant="244" id="iHZ-rq-wvy"/>
                                             <constraint firstItem="LFt-BR-67S" firstAttribute="leading" secondItem="tYF-jl-yFb" secondAttribute="leading" constant="142" id="l0A-Xk-p6J"/>
                                             <constraint firstItem="Dvw-4O-wqI" firstAttribute="baseline" secondItem="LFt-BR-67S" secondAttribute="baseline" type="default" id="nmK-RD-ccU"/>
-                                            <constraint firstAttribute="trailing" secondItem="YHM-lK-1a0" secondAttribute="trailing" constant="30" type="default" id="sO1-kR-2ub"/>
-                                            <constraint firstItem="YHM-lK-1a0" firstAttribute="centerY" secondItem="tYF-jl-yFb" secondAttribute="centerY" constant="-1" type="default" id="wHF-X5-gAN"/>
+                                            <constraint firstAttribute="trailing" secondItem="YHM-lK-1a0" secondAttribute="trailing" constant="30" type="default" id="v9M-bD-YFd"/>
                                             <constraint firstItem="2vm-ZS-qmJ" firstAttribute="baseline" secondItem="LFt-BR-67S" secondAttribute="baseline" type="default" id="wMv-XJ-FUB"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Xmt-OP-fCZ">
-                                        <rect key="frame" x="0.0" y="817" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="817" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C44 DBNPA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjS-3Q-AI5">
@@ -5397,9 +5397,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DBNPA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8U-Fp-1E3">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="Rwx-Hk-Vek"/>
+                                                        <constraint firstAttribute="width" constant="128" id="kGx-ct-lKp"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5410,25 +5410,25 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="w8U-Fp-1E3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xmt-OP-fCZ" secondAttribute="leading" constant="280" type="user" id="53S-L8-Xba"/>
-                                            <constraint firstItem="w8U-Fp-1E3" firstAttribute="centerY" secondItem="Xmt-OP-fCZ" secondAttribute="centerY" constant="-1" type="default" id="9QL-dv-uCR"/>
                                             <constraint firstItem="whW-8H-GyU" firstAttribute="top" secondItem="gjS-3Q-AI5" secondAttribute="top" type="default" id="A8a-lQ-iDN"/>
                                             <constraint firstItem="Fh9-gE-5aP" firstAttribute="top" secondItem="whW-8H-GyU" secondAttribute="top" type="default" id="JgU-qx-haG"/>
                                             <constraint firstItem="Fh9-gE-5aP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xmt-OP-fCZ" secondAttribute="leading" constant="220" type="user" id="LK5-Vz-VjO"/>
                                             <constraint firstItem="gjS-3Q-AI5" firstAttribute="baseline" secondItem="whW-8H-GyU" secondAttribute="baseline" type="default" id="NFw-OW-XQa"/>
                                             <constraint firstItem="gjS-3Q-AI5" firstAttribute="leading" secondItem="Xmt-OP-fCZ" secondAttribute="leading" constant="25" type="user" id="UO8-nH-acf"/>
-                                            <constraint firstAttribute="trailing" secondItem="w8U-Fp-1E3" secondAttribute="trailing" constant="30" type="default" id="WB8-zp-R89"/>
+                                            <constraint firstItem="w8U-Fp-1E3" firstAttribute="centerY" secondItem="Xmt-OP-fCZ" secondAttribute="centerY" constant="-0.5" type="default" id="Xbc-JL-bhY"/>
                                             <constraint firstItem="Fh9-gE-5aP" firstAttribute="leading" secondItem="Xmt-OP-fCZ" secondAttribute="leading" constant="244" id="Yue-QK-Vuw"/>
                                             <constraint firstItem="w8U-Fp-1E3" firstAttribute="top" secondItem="Fh9-gE-5aP" secondAttribute="top" type="default" id="ZY6-sx-X8g"/>
                                             <constraint firstItem="whW-8H-GyU" firstAttribute="leading" secondItem="Xmt-OP-fCZ" secondAttribute="leading" constant="142" id="g1r-sD-Nu3"/>
+                                            <constraint firstAttribute="trailing" secondItem="w8U-Fp-1E3" secondAttribute="trailing" constant="30" type="default" id="gvF-kh-7fN"/>
                                             <constraint firstItem="w8U-Fp-1E3" firstAttribute="baseline" secondItem="Fh9-gE-5aP" secondAttribute="baseline" type="default" id="pH8-Ue-4NM"/>
                                             <constraint firstItem="Fh9-gE-5aP" firstAttribute="baseline" secondItem="whW-8H-GyU" secondAttribute="baseline" type="default" id="xCp-U9-CQ5"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="all-XS-Tli">
-                                        <rect key="frame" x="0.0" y="861" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="861" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C45 Glut" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-Pn-ImI">
@@ -5458,9 +5458,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Glutaraldehyde" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKI-Xh-5pL">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="Zhz-Tb-TXI"/>
+                                                        <constraint firstAttribute="width" constant="128" id="WOa-Tk-iRw"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5471,25 +5471,25 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="zMI-it-63s" firstAttribute="baseline" secondItem="bYD-92-BMH" secondAttribute="baseline" type="default" id="03m-NF-MFU"/>
-                                            <constraint firstAttribute="trailing" secondItem="bKI-Xh-5pL" secondAttribute="trailing" constant="30" type="default" id="0AS-U6-ohf"/>
                                             <constraint firstItem="zMI-it-63s" firstAttribute="top" secondItem="bYD-92-BMH" secondAttribute="top" type="default" id="2BT-LB-vOW"/>
                                             <constraint firstItem="zMI-it-63s" firstAttribute="leading" secondItem="all-XS-Tli" secondAttribute="leading" constant="244" id="7Me-wh-Hcp"/>
                                             <constraint firstItem="bYD-92-BMH" firstAttribute="leading" secondItem="all-XS-Tli" secondAttribute="leading" constant="142" id="CXC-ur-qcw"/>
                                             <constraint firstItem="7sO-Pn-ImI" firstAttribute="leading" secondItem="all-XS-Tli" secondAttribute="leading" constant="25" type="user" id="PPG-gr-YLO"/>
                                             <constraint firstItem="7sO-Pn-ImI" firstAttribute="baseline" secondItem="bYD-92-BMH" secondAttribute="baseline" type="default" id="PwO-SU-MvP"/>
                                             <constraint firstItem="bKI-Xh-5pL" firstAttribute="baseline" secondItem="zMI-it-63s" secondAttribute="baseline" type="default" id="TLS-RQ-iFs"/>
-                                            <constraint firstItem="bKI-Xh-5pL" firstAttribute="centerY" secondItem="all-XS-Tli" secondAttribute="centerY" constant="-1" type="default" id="fUy-zG-FQm"/>
+                                            <constraint firstItem="bKI-Xh-5pL" firstAttribute="centerY" secondItem="all-XS-Tli" secondAttribute="centerY" constant="-0.5" type="default" id="WGq-TS-3dj"/>
                                             <constraint firstItem="bYD-92-BMH" firstAttribute="top" secondItem="7sO-Pn-ImI" secondAttribute="top" type="default" id="gey-ro-2XH"/>
                                             <constraint firstItem="zMI-it-63s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="all-XS-Tli" secondAttribute="leading" constant="220" type="user" id="hEK-7g-8ht"/>
                                             <constraint firstItem="bKI-Xh-5pL" firstAttribute="top" secondItem="zMI-it-63s" secondAttribute="top" type="default" id="k0T-Dg-gQs"/>
                                             <constraint firstItem="bKI-Xh-5pL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="all-XS-Tli" secondAttribute="leading" constant="280" type="user" id="oeo-gr-nYi"/>
+                                            <constraint firstAttribute="trailing" secondItem="bKI-Xh-5pL" secondAttribute="trailing" constant="30" type="default" id="wVO-h7-qfl"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="chj-x4-gY9">
-                                        <rect key="frame" x="0.0" y="905" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="905" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C48 BNPD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvT-ub-hnS">
@@ -5519,9 +5519,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bronopol BNPD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-ex-KBf">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="8vX-Uj-uv3"/>
+                                                        <constraint firstAttribute="width" constant="128" id="EiQ-pT-FGJ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5533,24 +5533,24 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         <constraints>
                                             <constraint firstItem="63e-aK-agE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="chj-x4-gY9" secondAttribute="leading" constant="220" type="user" id="4Pp-oT-4KT"/>
                                             <constraint firstItem="7MJ-ex-KBf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="chj-x4-gY9" secondAttribute="leading" constant="280" type="user" id="4Sv-yi-ATA"/>
-                                            <constraint firstItem="7MJ-ex-KBf" firstAttribute="centerY" secondItem="chj-x4-gY9" secondAttribute="centerY" constant="-1" type="default" id="5Pb-zF-xAW"/>
                                             <constraint firstItem="7MJ-ex-KBf" firstAttribute="baseline" secondItem="63e-aK-agE" secondAttribute="baseline" type="default" id="8BG-jP-23k"/>
+                                            <constraint firstItem="7MJ-ex-KBf" firstAttribute="centerY" secondItem="chj-x4-gY9" secondAttribute="centerY" constant="-0.5" type="default" id="U6T-xd-dnX"/>
                                             <constraint firstItem="jOR-4d-80a" firstAttribute="leading" secondItem="chj-x4-gY9" secondAttribute="leading" constant="142" id="Wtc-iV-yiQ"/>
                                             <constraint firstItem="QvT-ub-hnS" firstAttribute="baseline" secondItem="jOR-4d-80a" secondAttribute="baseline" type="default" id="Wy7-1o-Fqk"/>
                                             <constraint firstItem="63e-aK-agE" firstAttribute="top" secondItem="jOR-4d-80a" secondAttribute="top" type="default" id="X7m-Jg-vYa"/>
                                             <constraint firstItem="jOR-4d-80a" firstAttribute="top" secondItem="QvT-ub-hnS" secondAttribute="top" type="default" id="gJp-lF-1Rg"/>
-                                            <constraint firstAttribute="trailing" secondItem="7MJ-ex-KBf" secondAttribute="trailing" constant="30" type="default" id="lNj-7O-pTJ"/>
                                             <constraint firstItem="63e-aK-agE" firstAttribute="leading" secondItem="chj-x4-gY9" secondAttribute="leading" constant="244" id="nHb-5a-u1i"/>
                                             <constraint firstItem="63e-aK-agE" firstAttribute="baseline" secondItem="jOR-4d-80a" secondAttribute="baseline" type="default" id="sjD-Hj-aGb"/>
                                             <constraint firstItem="QvT-ub-hnS" firstAttribute="leading" secondItem="chj-x4-gY9" secondAttribute="leading" constant="25" type="user" id="u5W-Fy-l5k"/>
                                             <constraint firstItem="7MJ-ex-KBf" firstAttribute="top" secondItem="63e-aK-agE" secondAttribute="top" type="default" id="vWz-Ez-WL0"/>
+                                            <constraint firstAttribute="trailing" secondItem="7MJ-ex-KBf" secondAttribute="trailing" constant="30" type="default" id="ysb-3P-HdE"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Pco-sn-cPE">
-                                        <rect key="frame" x="0.0" y="949" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="949" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C51 THPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAe-GN-q78">
@@ -5580,9 +5580,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="THPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96t-BI-Xd0">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="JVQ-f9-bzB"/>
+                                                        <constraint firstAttribute="width" constant="128" id="Zkp-hi-RqB"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5594,10 +5594,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         <constraints>
                                             <constraint firstItem="96t-BI-Xd0" firstAttribute="baseline" secondItem="PEg-0x-cBS" secondAttribute="baseline" type="default" id="40j-YW-7J6"/>
                                             <constraint firstItem="96t-BI-Xd0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pco-sn-cPE" secondAttribute="leading" constant="280" type="user" id="4kf-yx-EJQ"/>
-                                            <constraint firstItem="96t-BI-Xd0" firstAttribute="centerY" secondItem="Pco-sn-cPE" secondAttribute="centerY" constant="-1" type="default" id="8rj-rQ-f9H"/>
+                                            <constraint firstItem="96t-BI-Xd0" firstAttribute="centerY" secondItem="Pco-sn-cPE" secondAttribute="centerY" constant="-0.5" type="default" id="66r-TK-Buj"/>
                                             <constraint firstItem="PEg-0x-cBS" firstAttribute="leading" secondItem="Pco-sn-cPE" secondAttribute="leading" constant="244" id="Csy-YX-bYF"/>
+                                            <constraint firstAttribute="trailing" secondItem="96t-BI-Xd0" secondAttribute="trailing" constant="30" type="default" id="Fbx-c6-qlW"/>
                                             <constraint firstItem="nAe-GN-q78" firstAttribute="leading" secondItem="Pco-sn-cPE" secondAttribute="leading" constant="25" type="user" id="VvJ-zo-Av9"/>
-                                            <constraint firstAttribute="trailing" secondItem="96t-BI-Xd0" secondAttribute="trailing" constant="30" type="default" id="bGY-Y3-wWv"/>
                                             <constraint firstItem="eEE-sh-wfk" firstAttribute="top" secondItem="nAe-GN-q78" secondAttribute="top" type="default" id="cUn-LX-JKs"/>
                                             <constraint firstItem="nAe-GN-q78" firstAttribute="baseline" secondItem="eEE-sh-wfk" secondAttribute="baseline" type="default" id="ehU-UA-Dmo"/>
                                             <constraint firstItem="PEg-0x-cBS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pco-sn-cPE" secondAttribute="leading" constant="220" type="user" id="h0n-P7-nbi"/>
@@ -5608,10 +5608,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DEe-eR-qkY">
-                                        <rect key="frame" x="0.0" y="993" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="993" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C52 Quat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3t-TV-RiH">
@@ -5641,9 +5641,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BAC Quat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGU-Qw-ed2">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="GSa-At-eBk"/>
+                                                        <constraint firstAttribute="width" constant="128" id="jng-z4-a9d"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5654,11 +5654,11 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="s3W-fn-R8x" firstAttribute="leading" secondItem="DEe-eR-qkY" secondAttribute="leading" constant="244" id="0F2-Wc-aIz"/>
-                                            <constraint firstItem="lGU-Qw-ed2" firstAttribute="centerY" secondItem="DEe-eR-qkY" secondAttribute="centerY" constant="-1" type="default" id="4P1-BG-6sr"/>
+                                            <constraint firstAttribute="trailing" secondItem="lGU-Qw-ed2" secondAttribute="trailing" constant="30" type="default" id="3kI-J6-rue"/>
                                             <constraint firstItem="lGU-Qw-ed2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DEe-eR-qkY" secondAttribute="leading" constant="280" type="user" id="5Nf-LZ-PxE"/>
                                             <constraint firstItem="lGU-Qw-ed2" firstAttribute="top" secondItem="s3W-fn-R8x" secondAttribute="top" type="default" id="D6O-5a-dDj"/>
+                                            <constraint firstItem="lGU-Qw-ed2" firstAttribute="centerY" secondItem="DEe-eR-qkY" secondAttribute="centerY" constant="-0.5" type="default" id="KcV-eh-vtU"/>
                                             <constraint firstItem="eJm-yC-UMj" firstAttribute="top" secondItem="O3t-TV-RiH" secondAttribute="top" type="default" id="dwX-8i-14w"/>
-                                            <constraint firstAttribute="trailing" secondItem="lGU-Qw-ed2" secondAttribute="trailing" constant="30" type="default" id="ekK-y6-lnG"/>
                                             <constraint firstItem="s3W-fn-R8x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DEe-eR-qkY" secondAttribute="leading" constant="220" type="user" id="evi-Ip-0VP"/>
                                             <constraint firstItem="eJm-yC-UMj" firstAttribute="leading" secondItem="DEe-eR-qkY" secondAttribute="leading" constant="142" id="lYe-Vf-sxA"/>
                                             <constraint firstItem="O3t-TV-RiH" firstAttribute="leading" secondItem="DEe-eR-qkY" secondAttribute="leading" constant="25" type="user" id="pFd-lQ-AZ0"/>
@@ -5669,10 +5669,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pRB-x9-0Zx">
-                                        <rect key="frame" x="0.0" y="1037" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="1037" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C54 Poly Quat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ub-0P-Dye">
@@ -5702,9 +5702,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Poly Quat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM7-XT-D8N">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="0tm-JJ-xjr"/>
+                                                        <constraint firstAttribute="width" constant="128" id="1KX-zC-KsK"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5714,6 +5714,7 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="zM7-XT-D8N" secondAttribute="trailing" constant="30" type="default" id="3vG-wh-sQh"/>
                                             <constraint firstItem="zM7-XT-D8N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pRB-x9-0Zx" secondAttribute="leading" constant="280" type="user" id="IcA-Ma-Ko4"/>
                                             <constraint firstItem="223-RK-r3P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pRB-x9-0Zx" secondAttribute="leading" constant="220" type="user" id="Q5U-v3-uNp"/>
                                             <constraint firstItem="7ub-0P-Dye" firstAttribute="baseline" secondItem="Am7-nH-NCM" secondAttribute="baseline" type="default" id="Tr7-GJ-2fV"/>
@@ -5726,14 +5727,13 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="7ub-0P-Dye" firstAttribute="leading" secondItem="pRB-x9-0Zx" secondAttribute="leading" constant="25" type="user" id="iKO-As-TMT"/>
                                             <constraint firstItem="Am7-nH-NCM" firstAttribute="leading" secondItem="pRB-x9-0Zx" secondAttribute="leading" constant="142" id="kvz-v3-q22"/>
                                             <constraint firstItem="223-RK-r3P" firstAttribute="leading" secondItem="pRB-x9-0Zx" secondAttribute="leading" constant="244" id="lf9-Ez-2YA"/>
-                                            <constraint firstAttribute="trailing" secondItem="zM7-XT-D8N" secondAttribute="trailing" constant="30" type="default" id="wtN-5g-pq5"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kcc-F6-zU3">
-                                        <rect key="frame" x="0.0" y="1081" width="568" height="45"/>
+                                        <rect key="frame" x="0.0" y="1081" width="480" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C58 DDMQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-R8-XYo">
@@ -5763,9 +5763,9 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sodium Bromide" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtU-Bi-aCc">
-                                                    <rect key="frame" x="312" y="11" width="216" height="21"/>
+                                                    <rect key="frame" x="312" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="216" id="A8N-5D-SWz"/>
+                                                        <constraint firstAttribute="width" constant="128" id="x6C-e7-xMv"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5779,7 +5779,7 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="WSA-rN-C7a" firstAttribute="top" secondItem="K6e-o1-MeA" secondAttribute="top" type="default" id="7lP-sF-sgh"/>
                                             <constraint firstItem="K6e-o1-MeA" firstAttribute="leading" secondItem="kcc-F6-zU3" secondAttribute="leading" constant="142" id="Jyq-Px-18o"/>
                                             <constraint firstItem="WSA-rN-C7a" firstAttribute="leading" secondItem="kcc-F6-zU3" secondAttribute="leading" constant="244" id="PVo-hZ-nUX"/>
-                                            <constraint firstAttribute="trailing" secondItem="AtU-Bi-aCc" secondAttribute="trailing" constant="30" type="default" id="QpL-Gs-Dzb"/>
+                                            <constraint firstAttribute="trailing" secondItem="AtU-Bi-aCc" secondAttribute="trailing" constant="30" type="default" id="Zd8-uF-Sz0"/>
                                             <constraint firstItem="AtU-Bi-aCc" firstAttribute="top" secondItem="WSA-rN-C7a" secondAttribute="top" type="default" id="cjt-PW-4tc"/>
                                             <constraint firstItem="WSA-rN-C7a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kcc-F6-zU3" secondAttribute="leading" constant="220" type="user" id="fDs-1J-pjo"/>
                                             <constraint firstItem="AtU-Bi-aCc" firstAttribute="baseline" secondItem="WSA-rN-C7a" secondAttribute="baseline" type="default" id="fFe-qG-bu7"/>
@@ -5795,10 +5795,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                             <tableViewSection headerTitle="Biocides (Oxidising)" id="ELb-fl-Riz">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="53" id="m7n-cp-L56">
-                                        <rect key="frame" x="0.0" y="1172" width="568" height="54"/>
+                                        <rect key="frame" x="0.0" y="1172" width="480" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="548" height="52"/>
+                                            <rect key="frame" x="10" y="1" width="460" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Product" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-ms-n7m">
@@ -5835,10 +5835,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xzR-3R-wsr">
-                                        <rect key="frame" x="0.0" y="1226" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="1226" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP C42T BCDMH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyc-SR-UKx">
@@ -5857,14 +5857,17 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="As required by L8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTM-d1-Gae">
                                                     <rect key="frame" x="201" y="11" width="114" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="114" id="7xk-4m-h20"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BCDMH 20g tablet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW9-iK-5CD">
-                                                    <rect key="frame" x="323" y="11" width="225" height="21"/>
+                                                    <rect key="frame" x="323" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="225" id="gcX-vM-z8O"/>
+                                                        <constraint firstAttribute="width" constant="128" id="7Ts-wb-U7G"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5875,24 +5878,24 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="BW9-iK-5CD" firstAttribute="top" secondItem="ZTM-d1-Gae" secondAttribute="top" type="default" id="5qv-zg-Kqr"/>
-                                            <constraint firstItem="mOX-WP-2Sq" firstAttribute="centerY" secondItem="xzR-3R-wsr" secondAttribute="centerY" constant="-0.5" type="default" id="8uV-Vf-yy2"/>
+                                            <constraint firstItem="BW9-iK-5CD" firstAttribute="centerY" secondItem="xzR-3R-wsr" secondAttribute="centerY" constant="-0.5" type="default" id="AKv-od-BpD"/>
                                             <constraint firstItem="mOX-WP-2Sq" firstAttribute="leading" secondItem="xzR-3R-wsr" secondAttribute="leading" constant="141" id="Brl-JD-crZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="BW9-iK-5CD" secondAttribute="trailing" constant="10" type="default" id="I7Z-9J-Poc"/>
                                             <constraint firstItem="ZTM-d1-Gae" firstAttribute="baseline" secondItem="mOX-WP-2Sq" secondAttribute="baseline" type="default" id="JKC-bY-cle"/>
                                             <constraint firstItem="ZTM-d1-Gae" firstAttribute="top" secondItem="mOX-WP-2Sq" secondAttribute="top" type="default" id="MKe-0e-LhY"/>
                                             <constraint firstItem="mOX-WP-2Sq" firstAttribute="top" secondItem="Qyc-SR-UKx" secondAttribute="top" type="default" id="V3Z-Z2-yfd"/>
                                             <constraint firstItem="BW9-iK-5CD" firstAttribute="leading" secondItem="ZTM-d1-Gae" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gRw-eU-4xZ"/>
                                             <constraint firstItem="Qyc-SR-UKx" firstAttribute="leading" secondItem="xzR-3R-wsr" secondAttribute="leading" constant="17" id="mz0-8F-sjx"/>
+                                            <constraint firstItem="ZTM-d1-Gae" firstAttribute="leading" secondItem="xzR-3R-wsr" secondAttribute="leading" constant="211" id="od8-XI-rqN"/>
                                             <constraint firstItem="Qyc-SR-UKx" firstAttribute="baseline" secondItem="mOX-WP-2Sq" secondAttribute="baseline" type="default" id="qnp-ZB-NKn"/>
                                             <constraint firstItem="BW9-iK-5CD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xzR-3R-wsr" secondAttribute="leading" constant="280" type="user" id="xoX-xB-rFc"/>
                                             <constraint firstItem="BW9-iK-5CD" firstAttribute="baseline" secondItem="ZTM-d1-Gae" secondAttribute="baseline" type="default" id="za9-Mw-T1t"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vAI-hE-Tzt">
-                                        <rect key="frame" x="0.0" y="1270" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="1270" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP UB30 Bromine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEl-Ut-Dtk">
@@ -5911,14 +5914,17 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="As required by L8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOb-dn-PNY">
                                                     <rect key="frame" x="201" y="11" width="114" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="114" id="wpZ-35-pUv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Liquid bromine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vei-Z6-5AB">
-                                                    <rect key="frame" x="323" y="11" width="225" height="21"/>
+                                                    <rect key="frame" x="323" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="225" id="6Fy-5A-daa"/>
+                                                        <constraint firstAttribute="width" constant="128" id="NxM-af-J6c"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5932,21 +5938,21 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <constraint firstItem="kEl-Ut-Dtk" firstAttribute="leading" secondItem="vAI-hE-Tzt" secondAttribute="leading" constant="17" id="3vq-dY-3uO"/>
                                             <constraint firstItem="mkd-jL-GYc" firstAttribute="leading" secondItem="vAI-hE-Tzt" secondAttribute="leading" constant="141" id="9Kc-Ug-YBY"/>
                                             <constraint firstItem="EOb-dn-PNY" firstAttribute="top" secondItem="mkd-jL-GYc" secondAttribute="top" type="default" id="Bjo-CS-Eqm"/>
+                                            <constraint firstItem="EOb-dn-PNY" firstAttribute="leading" secondItem="vAI-hE-Tzt" secondAttribute="leading" constant="211" id="Csq-nh-MsT"/>
                                             <constraint firstItem="mkd-jL-GYc" firstAttribute="top" secondItem="kEl-Ut-Dtk" secondAttribute="top" type="default" id="Hhn-6j-Xr1"/>
                                             <constraint firstItem="vei-Z6-5AB" firstAttribute="baseline" secondItem="EOb-dn-PNY" secondAttribute="baseline" type="default" id="KSC-RZ-RDu"/>
                                             <constraint firstItem="kEl-Ut-Dtk" firstAttribute="baseline" secondItem="mkd-jL-GYc" secondAttribute="baseline" type="default" id="OS1-3y-C9r"/>
-                                            <constraint firstAttribute="trailing" secondItem="vei-Z6-5AB" secondAttribute="trailing" constant="10" type="default" id="Z0M-qI-gGl"/>
                                             <constraint firstItem="vei-Z6-5AB" firstAttribute="leading" secondItem="EOb-dn-PNY" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Z0y-c9-2sl"/>
-                                            <constraint firstItem="mkd-jL-GYc" firstAttribute="centerY" secondItem="vAI-hE-Tzt" secondAttribute="centerY" constant="-0.5" type="default" id="a2c-7T-tbf"/>
+                                            <constraint firstItem="EOb-dn-PNY" firstAttribute="centerY" secondItem="vAI-hE-Tzt" secondAttribute="centerY" constant="-0.5" type="default" id="big-Un-Ogc"/>
                                             <constraint firstItem="EOb-dn-PNY" firstAttribute="baseline" secondItem="mkd-jL-GYc" secondAttribute="baseline" type="default" id="vWm-E0-ihx"/>
                                             <constraint firstItem="vei-Z6-5AB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vAI-hE-Tzt" secondAttribute="leading" constant="280" type="user" id="zjS-Hz-twl"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Pee-U1-3hS">
-                                        <rect key="frame" x="0.0" y="1314" width="568" height="44"/>
+                                        <rect key="frame" x="0.0" y="1314" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP Chlor 10 NaOCl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bu-Lb-iaG">
@@ -5965,14 +5971,17 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="As required by L8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-ll-GIf">
                                                     <rect key="frame" x="201" y="11" width="114" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="114" id="tqm-43-wHl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sodium hypochlorite" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd7-wy-Vha">
-                                                    <rect key="frame" x="323" y="11" width="225" height="21"/>
+                                                    <rect key="frame" x="323" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="225" id="Gt7-dl-vR2"/>
+                                                        <constraint firstAttribute="width" constant="128" id="Gkr-IL-2II"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5982,12 +5991,12 @@ Where supported by the device, you can touch the appropriate field to activate t
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="aOE-Q3-Mij" firstAttribute="centerY" secondItem="Pee-U1-3hS" secondAttribute="centerY" constant="-0.5" type="default" id="0ce-uW-5aM"/>
+                                            <constraint firstItem="ZPg-ll-GIf" firstAttribute="leading" secondItem="Pee-U1-3hS" secondAttribute="leading" constant="211" id="BMT-aU-NJc"/>
                                             <constraint firstItem="0bu-Lb-iaG" firstAttribute="baseline" secondItem="aOE-Q3-Mij" secondAttribute="baseline" type="default" id="BvS-Yx-nF4"/>
                                             <constraint firstItem="Wd7-wy-Vha" firstAttribute="top" secondItem="ZPg-ll-GIf" secondAttribute="top" type="default" id="JlX-Ox-acb"/>
                                             <constraint firstItem="Wd7-wy-Vha" firstAttribute="leading" secondItem="ZPg-ll-GIf" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Lbj-5o-rfr"/>
                                             <constraint firstItem="ZPg-ll-GIf" firstAttribute="baseline" secondItem="aOE-Q3-Mij" secondAttribute="baseline" type="default" id="M1t-Sc-iuN"/>
-                                            <constraint firstAttribute="trailing" secondItem="Wd7-wy-Vha" secondAttribute="trailing" constant="10" type="default" id="NOL-ED-sPK"/>
+                                            <constraint firstItem="Wd7-wy-Vha" firstAttribute="centerY" secondItem="Pee-U1-3hS" secondAttribute="centerY" constant="-0.5" type="default" id="Oar-nW-fTH"/>
                                             <constraint firstItem="0bu-Lb-iaG" firstAttribute="leading" secondItem="Pee-U1-3hS" secondAttribute="leading" constant="17" id="dC0-gB-1jv"/>
                                             <constraint firstItem="Wd7-wy-Vha" firstAttribute="baseline" secondItem="ZPg-ll-GIf" secondAttribute="baseline" type="default" id="eE0-qC-00e"/>
                                             <constraint firstItem="aOE-Q3-Mij" firstAttribute="top" secondItem="0bu-Lb-iaG" secondAttribute="top" type="default" id="oUm-RR-2uc"/>
@@ -5997,10 +6006,10 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ZbV-8o-Xbp">
-                                        <rect key="frame" x="0.0" y="1358" width="568" height="45"/>
+                                        <rect key="frame" x="0.0" y="1358" width="480" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="548" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="460" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WTP B20 Bromide" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDq-it-15v">
@@ -6020,14 +6029,17 @@ Where supported by the device, you can touch the appropriate field to activate t
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="As required by L8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJH-lW-gIg">
                                                     <rect key="frame" x="201" y="11" width="114" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="114" id="Ouv-Kr-sxg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.16318020350000001" green="0.70529042119999996" blue="0.36086721910000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sodium Bromide" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16i-gf-RrQ">
-                                                    <rect key="frame" x="323" y="11" width="225" height="21"/>
+                                                    <rect key="frame" x="323" y="11" width="128" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="225" id="TZs-Tz-tUI"/>
+                                                        <constraint firstAttribute="width" constant="128" id="VzA-pa-8FM"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -6038,16 +6050,16 @@ Where supported by the device, you can touch the appropriate field to activate t
                                         </view>
                                         <constraints>
                                             <constraint firstItem="HJH-lW-gIg" firstAttribute="top" secondItem="WPU-Re-C71" secondAttribute="top" type="default" id="1PD-bl-Rme"/>
+                                            <constraint firstItem="HJH-lW-gIg" firstAttribute="leading" secondItem="ZbV-8o-Xbp" secondAttribute="leading" constant="211" id="5FQ-hg-qvr"/>
                                             <constraint firstItem="pDq-it-15v" firstAttribute="baseline" secondItem="WPU-Re-C71" secondAttribute="baseline" type="default" id="7EE-Yx-435"/>
-                                            <constraint firstItem="WPU-Re-C71" firstAttribute="centerY" secondItem="ZbV-8o-Xbp" secondAttribute="centerY" constant="-1" type="default" id="7zz-rm-VNV"/>
                                             <constraint firstItem="WPU-Re-C71" firstAttribute="leading" secondItem="ZbV-8o-Xbp" secondAttribute="leading" constant="141" id="Gw8-hK-sXJ"/>
+                                            <constraint firstItem="16i-gf-RrQ" firstAttribute="centerY" secondItem="ZbV-8o-Xbp" secondAttribute="centerY" constant="-1" type="default" id="JfH-vP-Q8c"/>
                                             <constraint firstItem="pDq-it-15v" firstAttribute="leading" secondItem="ZbV-8o-Xbp" secondAttribute="leading" constant="17" id="MSe-BV-Ihh"/>
                                             <constraint firstItem="HJH-lW-gIg" firstAttribute="baseline" secondItem="WPU-Re-C71" secondAttribute="baseline" type="default" id="PYT-wc-hl5"/>
                                             <constraint firstItem="16i-gf-RrQ" firstAttribute="top" secondItem="HJH-lW-gIg" secondAttribute="top" type="default" id="b6s-Ms-TYI"/>
                                             <constraint firstItem="16i-gf-RrQ" firstAttribute="leading" secondItem="HJH-lW-gIg" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="hgb-jI-PG8"/>
                                             <constraint firstItem="16i-gf-RrQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZbV-8o-Xbp" secondAttribute="leading" constant="280" type="user" id="oWx-AW-OO1"/>
                                             <constraint firstItem="16i-gf-RrQ" firstAttribute="baseline" secondItem="HJH-lW-gIg" secondAttribute="baseline" type="default" id="trb-rA-San"/>
-                                            <constraint firstAttribute="trailing" secondItem="16i-gf-RrQ" secondAttribute="trailing" constant="10" type="default" id="vQs-hp-B4b"/>
                                             <constraint firstItem="WPU-Re-C71" firstAttribute="top" secondItem="pDq-it-15v" secondAttribute="top" type="default" id="xO9-Ia-OPS"/>
                                         </constraints>
                                     </tableViewCell>
@@ -6067,7 +6079,7 @@ Where supported by the device, you can touch the appropriate field to activate t
                         </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="outC31Dosage" destination="S2L-d5-BDr" id="QJN-F1-JjP"/>
                         <outlet property="outC31Usage" destination="gVh-vl-pIm" id="L9A-vl-bf8"/>
