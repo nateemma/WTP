@@ -1,15 +1,15 @@
 //
-//  BoilerProductsTableViewController.m
+//  BoilerSolidsTableViewController.m
 //  WTP
 //
 //  Created by Phil Price on 9/18/13.
 //  Copyright (c) 2013 Nateemma. All rights reserved.
 //
 
-#import "BoilerProductsTableViewController.h"
+#import "BoilerSolidsTableViewController.h"
 #import "BoilerWaterModel.h"
 
-@implementation BoilerProductsTableViewController
+@implementation BoilerSolidsTableViewController
 
 
 // Object to hold boiler data
@@ -38,7 +38,7 @@ BoilerWaterModel *mBoilerModel;
     
     
     // create the model object
-    NSLog(@"BoilerProductsTableViewController: loading data...");
+    NSLog(@"BoilerSolidsTableViewController: loading data...");
     mBoilerModel = [BoilerWaterModel sharedInstance];
     
     // update display
@@ -247,7 +247,7 @@ BoilerWaterModel *mBoilerModel;
 // Action to launch email app
 - (IBAction) sendEmail:(id)sender {
     
-    NSLog(@"BoilerProductsTableViewController:sendEmail:");
+    NSLog(@"BoilerSolidsTableViewController:sendEmail:");
     
     
     

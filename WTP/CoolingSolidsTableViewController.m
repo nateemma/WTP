@@ -1,5 +1,5 @@
 //
-//  CoolingProductsTableViewController.m
+//  CoolingSolidsTableViewController.m
 //  WTP
 //
 //  Created by Phil Price on 9/22/13.
@@ -9,13 +9,13 @@
 //  11/6/13 - removed cost parameters by customer request (commented out for now)
 //
 
-#import "CoolingProductsTableViewController.h"
+#import "CoolingSolidsTableViewController.h"
 #import "CoolingWaterModel.h"
 
 
 
 
-@implementation CoolingProductsTableViewController
+@implementation CoolingSolidsTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -177,7 +177,7 @@ CoolingWaterModel *mCoolingModel;
     NSString *rowFormat;  // String to hold format template for row data
     NSString *disclaimer = @"<p><i>Disclaimer</i>: the values shown are estimates only.<p>";
     
-    htmlString = @"<p>Below are the input parameters used for the calculations, and the resulting product estimates:</p>";
+    htmlString = @"<p>Below are the input parameters used for the calculations, and the resulting cooling (solid) product estimates:</p>";
     
     // Input Parameters
     htmlString = [htmlString stringByAppendingString:@"<br>"];
@@ -345,10 +345,11 @@ CoolingWaterModel *mCoolingModel;
     return htmlString;
 }
 
+
 // Action to launch email app
 - (IBAction) sendEmail:(id)sender {
     
-    NSLog(@"CoolingProductsTableViewController:sendEmail:");
+    NSLog(@"CoolingSolidsTableViewController:sendEmail:");
     
     
     

@@ -1,5 +1,5 @@
 //
-//  BoilerProductsTableViewController.h
+//  BoilerSolidsTableViewController.h
 //  WTP
 //
 //  Created by Phil Price on 9/18/13.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
-@interface BoilerProductsTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
+@interface BoilerSolidsTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 
 @property (retain, nonatomic) IBOutlet UILabel *outSS1295Dosage;
 @property (retain, nonatomic) IBOutlet UILabel *outSS1295Usage;

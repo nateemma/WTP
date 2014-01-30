@@ -129,6 +129,74 @@
 //@property (copy, nonatomic) NSNumber *c42tCostAnnum;
 //@property (copy, nonatomic) NSString *c42tDescription;
 
+// LIQUIDS
+
+// Inhibitors
+@property (copy, nonatomic) NSNumber *h207Dosage;
+@property (copy, nonatomic) NSNumber *h207Usage;
+
+@property (copy, nonatomic) NSNumber *h2073Dosage;
+@property (copy, nonatomic) NSNumber *h2073Usage;
+
+@property (copy, nonatomic) NSNumber *h280Dosage;
+@property (copy, nonatomic) NSNumber *h280Usage;
+
+@property (copy, nonatomic) NSNumber *h2805Dosage;
+@property (copy, nonatomic) NSNumber *h2805Usage;
+
+@property (copy, nonatomic) NSNumber *h390Dosage;
+@property (copy, nonatomic) NSNumber *h390Usage;
+
+@property (copy, nonatomic) NSNumber *h3905Dosage;
+@property (copy, nonatomic) NSNumber *h3905Usage;
+
+@property (copy, nonatomic) NSNumber *h391Dosage;
+@property (copy, nonatomic) NSNumber *h391Usage;
+
+@property (copy, nonatomic) NSNumber *h423Dosage;
+@property (copy, nonatomic) NSNumber *h423Usage;
+
+@property (copy, nonatomic) NSNumber *h425Dosage;
+@property (copy, nonatomic) NSNumber *h425Usage;
+
+@property (copy, nonatomic) NSNumber *h4255Dosage;
+@property (copy, nonatomic) NSNumber *h4255Usage;
+
+@property (copy, nonatomic) NSNumber *h535Dosage;
+@property (copy, nonatomic) NSNumber *h535Usage;
+
+@property (copy, nonatomic) NSNumber *h874Dosage;
+@property (copy, nonatomic) NSNumber *h874Usage;
+
+// Biocides - non-oxidisers
+@property (copy, nonatomic) NSNumber *c31Dosage;
+@property (copy, nonatomic) NSNumber *c31Usage;
+
+@property (copy, nonatomic) NSNumber *c32Dosage;
+@property (copy, nonatomic) NSNumber *c32Usage;
+
+@property (copy, nonatomic) NSNumber *c44Dosage;
+@property (copy, nonatomic) NSNumber *c44Usage;
+
+@property (copy, nonatomic) NSNumber *c45Dosage;
+@property (copy, nonatomic) NSNumber *c45Usage;
+
+@property (copy, nonatomic) NSNumber *c48Dosage;
+@property (copy, nonatomic) NSNumber *c48Usage;
+
+@property (copy, nonatomic) NSNumber *c51Dosage;
+@property (copy, nonatomic) NSNumber *c51Usage;
+
+@property (copy, nonatomic) NSNumber *c52Dosage;
+@property (copy, nonatomic) NSNumber *c52Usage;
+
+@property (copy, nonatomic) NSNumber *c54Dosage;
+@property (copy, nonatomic) NSNumber *c54Usage;
+
+@property (copy, nonatomic) NSNumber *c58Dosage;
+@property (copy, nonatomic) NSNumber *c58Usage;
+
+
 
 // Methods
 

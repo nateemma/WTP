@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Nateemma. All rights reserved.
 //
 //  11/6/13 - removed cost parameters by customer request (commented out for now)
+//  01/23/14 - added support for liquid products
 //
 //
 
@@ -222,6 +223,9 @@ static CoolingWaterModel *sharedInstance = nil;
     @try {
         
         if (self.inputsValid){
+            
+            // SOLIDS
+            
             // Evaporation
             tmp = self.circulation.doubleValue * self.deltaT.doubleValue * 1.8 * 0.001;// 1.8 = conversion to Farenheit
             self.evaporation = [NSNumber numberWithDouble:(tmp)];
@@ -347,6 +351,79 @@ static CoolingWaterModel *sharedInstance = nil;
             tmp = self.c42tUsage.doubleValue * self.c42tCostKg.doubleValue;
             self.c42tCostAnnum = [NSNumber numberWithDouble:(tmp)];
              */
+            
+            
+            // LIQUIDS
+            
+            // Inhibitors
+            tmp = self.makeupAnnum.doubleValue / (1000.0 * self.concFactor.doubleValue); // common factor
+            
+            self.h207Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.h207Usage = [NSNumber numberWithDouble:(self.h207Dosage.doubleValue * tmp)];
+            
+            self.h2073Dosage = [NSNumber numberWithDouble:(300.0)];
+            self.h2073Usage = [NSNumber numberWithDouble:(self.h2073Dosage.doubleValue * tmp)];
+            
+            self.h280Dosage = [NSNumber numberWithDouble:(80.0)];
+            self.h280Usage = [NSNumber numberWithDouble:(self.h280Dosage.doubleValue * tmp)];
+            
+            self.h2805Dosage = [NSNumber numberWithDouble:(160.0)];
+            self.h2805Usage = [NSNumber numberWithDouble:(self.h2805Dosage.doubleValue * tmp)];
+            
+            self.h390Dosage = [NSNumber numberWithDouble:(50.0)];
+            self.h390Usage = [NSNumber numberWithDouble:(self.h390Dosage.doubleValue * tmp)];
+            
+            self.h3905Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.h3905Usage = [NSNumber numberWithDouble:(self.h3905Dosage.doubleValue * tmp)];
+            
+            self.h391Dosage = [NSNumber numberWithDouble:(150.0)];
+            self.h391Usage = [NSNumber numberWithDouble:(self.h391Dosage.doubleValue * tmp)];
+            
+            self.h423Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.h423Usage = [NSNumber numberWithDouble:(self.h423Dosage.doubleValue * tmp)];
+            
+            self.h425Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.h425Usage = [NSNumber numberWithDouble:(self.h425Dosage.doubleValue * tmp)];
+            
+            self.h4255Dosage = [NSNumber numberWithDouble:(200.0)];
+            self.h4255Usage = [NSNumber numberWithDouble:(self.h4255Dosage.doubleValue * tmp)];
+            
+            self.h535Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.h535Usage = [NSNumber numberWithDouble:(self.h535Dosage.doubleValue * tmp)];
+            
+            self.h874Dosage = [NSNumber numberWithDouble:(120.0)];
+            self.h874Usage = [NSNumber numberWithDouble:(self.h874Dosage.doubleValue * tmp)];
+            
+            // Biocides - non-oxidisers
+            tmp = self.sysVolume.doubleValue * 52.0 / 1000.0 ; // common factor
+            
+            self.c31Dosage = [NSNumber numberWithDouble:(200.0)];
+            self.c31Usage = [NSNumber numberWithDouble:(self.c31Dosage.doubleValue * tmp)];
+            
+            self.c32Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.c32Usage = [NSNumber numberWithDouble:(self.c32Dosage.doubleValue * tmp)];
+            
+            self.c44Dosage = [NSNumber numberWithDouble:(80.0)];
+            self.c44Usage = [NSNumber numberWithDouble:(self.c44Dosage.doubleValue * tmp)];
+            
+            self.c45Dosage = [NSNumber numberWithDouble:(125.0)];
+            self.c45Usage = [NSNumber numberWithDouble:(self.c45Dosage.doubleValue * tmp)];
+            
+            self.c48Dosage = [NSNumber numberWithDouble:(250.0)];
+            self.c48Usage = [NSNumber numberWithDouble:(self.c48Dosage.doubleValue * tmp)];
+            
+            self.c51Dosage = [NSNumber numberWithDouble:(125.0)];
+            self.c51Usage = [NSNumber numberWithDouble:(self.c51Dosage.doubleValue * tmp)];
+            
+            self.c52Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.c52Usage = [NSNumber numberWithDouble:(self.c52Dosage.doubleValue * tmp)];
+            
+            self.c54Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.c54Usage = [NSNumber numberWithDouble:(self.c54Dosage.doubleValue * tmp)];
+            
+            self.c58Dosage = [NSNumber numberWithDouble:(100.0)];
+            self.c58Usage = [NSNumber numberWithDouble:(self.c58Dosage.doubleValue * tmp)];
+
             
         } else {
             NSLog(@"CoolingWaterModel: inputs not fully defined");

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BoilerInputTableViewController : UITableViewController <UITextFieldDelegate>
+@interface BoilerInputTableViewController : UITableViewController <UITextFieldDelegate, UIAlertViewDelegate>
 
 
 // Site Name

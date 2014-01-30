@@ -14,6 +14,13 @@
 		862C726C17AC7C55009AC07E /* WTPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862C726B17AC7C55009AC07E /* WTPAppDelegate.m */; };
 		8633D2281807671C0095342F /* testdata in Resources */ = {isa = PBXBuildFile; fileRef = 8633D2271807671C0095342F /* testdata */; };
 		8633D229180767240095342F /* testdata in Resources */ = {isa = PBXBuildFile; fileRef = 8633D2271807671C0095342F /* testdata */; };
+		863D26D118917A5600613749 /* icon_cooling.png in Resources */ = {isa = PBXBuildFile; fileRef = 863D26D018917A5600613749 /* icon_cooling.png */; };
+		863D26D318917A7600613749 /* icon_liquid.png in Resources */ = {isa = PBXBuildFile; fileRef = 863D26D218917A7600613749 /* icon_liquid.png */; };
+		863D26D518917A8600613749 /* icon_boiler.png in Resources */ = {isa = PBXBuildFile; fileRef = 863D26D418917A8600613749 /* icon_boiler.png */; };
+		863D26D718917A9C00613749 /* icon_solid.png in Resources */ = {isa = PBXBuildFile; fileRef = 863D26D618917A9C00613749 /* icon_solid.png */; };
+		863D26DB189702B900613749 /* BoilerLiquidsTableViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 863D26DA189702B900613749 /* BoilerLiquidsTableViewController.h */; };
+		863D26DD1897030700613749 /* BoilerLiquidsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D26DC1897030700613749 /* BoilerLiquidsTableViewController.m */; };
+		863D26E01899D83A00613749 /* CoolingLiquidsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D26DF1899D83A00613749 /* CoolingLiquidsTableViewController.m */; };
 		8648E2ED17F62679001B7488 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86012D2517CF9B5400E7E61E /* InfoPlist.strings */; };
 		8657D0E817D5728700798573 /* BoilerWaterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8657D0E717D5728700798573 /* BoilerWaterModel.m */; };
 		8657D0EA17D6A17200798573 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8657D0E917D6A17200798573 /* QuartzCore.framework */; };
@@ -23,9 +30,9 @@
 		86943B0617E7AB9D00413445 /* CoolingWaterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B0517E7AB9D00413445 /* CoolingWaterModel.m */; };
 		86943B1217E8212E00413445 /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1117E8212E00413445 /* InfoTableViewController.m */; };
 		86943B1517EA660100413445 /* BoilerInputTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1417EA660100413445 /* BoilerInputTableViewController.m */; };
-		86943B1817EA7D5B00413445 /* BoilerProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1717EA7D5B00413445 /* BoilerProductsTableViewController.m */; };
+		86943B1817EA7D5B00413445 /* BoilerSolidsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1717EA7D5B00413445 /* BoilerSolidsTableViewController.m */; };
 		86943B1B17EFBA8E00413445 /* CoolingInputTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */; };
-		86943B1E17EFBE9A00413445 /* CoolingProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1D17EFBE9A00413445 /* CoolingProductsTableViewController.m */; };
+		86943B1E17EFBE9A00413445 /* CoolingSolidsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B1D17EFBE9A00413445 /* CoolingSolidsTableViewController.m */; };
 		86943B2417F0C65700413445 /* FieldNavigationLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 86943B2317F0C65700413445 /* FieldNavigationLink.m */; };
 		86943B2617F39EA300413445 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86943B2517F39EA200413445 /* MessageUI.framework */; };
 		86943B2817F39EC400413445 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86943B2717F39EC400413445 /* MapKit.framework */; };
@@ -95,6 +102,14 @@
 		862C726A17AC7C55009AC07E /* WTPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPAppDelegate.h; sourceTree = "<group>"; };
 		862C726B17AC7C55009AC07E /* WTPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPAppDelegate.m; sourceTree = "<group>"; };
 		8633D2271807671C0095342F /* testdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = testdata; sourceTree = "<group>"; };
+		863D26D018917A5600613749 /* icon_cooling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_cooling.png; path = ../icon_cooling.png; sourceTree = "<group>"; };
+		863D26D218917A7600613749 /* icon_liquid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_liquid.png; path = ../icon_liquid.png; sourceTree = "<group>"; };
+		863D26D418917A8600613749 /* icon_boiler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_boiler.png; path = ../icon_boiler.png; sourceTree = "<group>"; };
+		863D26D618917A9C00613749 /* icon_solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_solid.png; path = ../icon_solid.png; sourceTree = "<group>"; };
+		863D26DA189702B900613749 /* BoilerLiquidsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerLiquidsTableViewController.h; sourceTree = "<group>"; };
+		863D26DC1897030700613749 /* BoilerLiquidsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerLiquidsTableViewController.m; sourceTree = "<group>"; };
+		863D26DE1899D7A400613749 /* CoolingLiquidsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingLiquidsTableViewController.h; sourceTree = "<group>"; };
+		863D26DF1899D83A00613749 /* CoolingLiquidsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingLiquidsTableViewController.m; sourceTree = "<group>"; };
 		8646ADC91828525E009C6C80 /* CoolingWaterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingWaterModel.h; sourceTree = "<group>"; };
 		8657D0E617D5728700798573 /* BoilerWaterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerWaterModel.h; sourceTree = "<group>"; };
 		8657D0E717D5728700798573 /* BoilerWaterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerWaterModel.m; sourceTree = "<group>"; };
@@ -108,12 +123,12 @@
 		86943B1117E8212E00413445 /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
 		86943B1317EA660100413445 /* BoilerInputTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerInputTableViewController.h; sourceTree = "<group>"; };
 		86943B1417EA660100413445 /* BoilerInputTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerInputTableViewController.m; sourceTree = "<group>"; };
-		86943B1617EA7D5A00413445 /* BoilerProductsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerProductsTableViewController.h; sourceTree = "<group>"; };
-		86943B1717EA7D5B00413445 /* BoilerProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerProductsTableViewController.m; sourceTree = "<group>"; };
+		86943B1617EA7D5A00413445 /* BoilerSolidsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoilerSolidsTableViewController.h; sourceTree = "<group>"; };
+		86943B1717EA7D5B00413445 /* BoilerSolidsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoilerSolidsTableViewController.m; sourceTree = "<group>"; };
 		86943B1917EFBA8E00413445 /* CoolingInputTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingInputTableViewController.h; sourceTree = "<group>"; };
 		86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingInputTableViewController.m; sourceTree = "<group>"; };
-		86943B1C17EFBE9A00413445 /* CoolingProductsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingProductsTableViewController.h; sourceTree = "<group>"; };
-		86943B1D17EFBE9A00413445 /* CoolingProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingProductsTableViewController.m; sourceTree = "<group>"; };
+		86943B1C17EFBE9A00413445 /* CoolingSolidsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingSolidsTableViewController.h; sourceTree = "<group>"; };
+		86943B1D17EFBE9A00413445 /* CoolingSolidsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingSolidsTableViewController.m; sourceTree = "<group>"; };
 		86943B2217F0C65700413445 /* FieldNavigationLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldNavigationLink.h; sourceTree = "<group>"; };
 		86943B2317F0C65700413445 /* FieldNavigationLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldNavigationLink.m; sourceTree = "<group>"; };
 		86943B2517F39EA200413445 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -175,18 +190,26 @@
 		86012D2117CF9B5400E7E61E /* WTP */ = {
 			isa = PBXGroup;
 			children = (
-				86943B1317EA660100413445 /* BoilerInputTableViewController.h */,
-				86943B1417EA660100413445 /* BoilerInputTableViewController.m */,
-				86943B1617EA7D5A00413445 /* BoilerProductsTableViewController.h */,
-				86943B1717EA7D5B00413445 /* BoilerProductsTableViewController.m */,
+				863D26D418917A8600613749 /* icon_boiler.png */,
+				863D26D218917A7600613749 /* icon_liquid.png */,
+				863D26D618917A9C00613749 /* icon_solid.png */,
+				863D26D018917A5600613749 /* icon_cooling.png */,
 				8657D0E617D5728700798573 /* BoilerWaterModel.h */,
 				8657D0E717D5728700798573 /* BoilerWaterModel.m */,
-				86943B1917EFBA8E00413445 /* CoolingInputTableViewController.h */,
-				86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */,
-				86943B1C17EFBE9A00413445 /* CoolingProductsTableViewController.h */,
-				86943B1D17EFBE9A00413445 /* CoolingProductsTableViewController.m */,
+				86943B1317EA660100413445 /* BoilerInputTableViewController.h */,
+				86943B1417EA660100413445 /* BoilerInputTableViewController.m */,
+				86943B1617EA7D5A00413445 /* BoilerSolidsTableViewController.h */,
+				86943B1717EA7D5B00413445 /* BoilerSolidsTableViewController.m */,
+				863D26DA189702B900613749 /* BoilerLiquidsTableViewController.h */,
+				863D26DC1897030700613749 /* BoilerLiquidsTableViewController.m */,
 				8646ADC91828525E009C6C80 /* CoolingWaterModel.h */,
 				86943B0517E7AB9D00413445 /* CoolingWaterModel.m */,
+				86943B1917EFBA8E00413445 /* CoolingInputTableViewController.h */,
+				86943B1A17EFBA8E00413445 /* CoolingInputTableViewController.m */,
+				86943B1C17EFBE9A00413445 /* CoolingSolidsTableViewController.h */,
+				86943B1D17EFBE9A00413445 /* CoolingSolidsTableViewController.m */,
+				863D26DE1899D7A400613749 /* CoolingLiquidsTableViewController.h */,
+				863D26DF1899D83A00613749 /* CoolingLiquidsTableViewController.m */,
 				86943B2217F0C65700413445 /* FieldNavigationLink.h */,
 				86943B2317F0C65700413445 /* FieldNavigationLink.m */,
 				8657D0EB17D6A30400798573 /* GradientButton.h */,
@@ -404,11 +427,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863D26D118917A5600613749 /* icon_cooling.png in Resources */,
 				8633D229180767240095342F /* testdata in Resources */,
+				863D26D318917A7600613749 /* icon_liquid.png in Resources */,
 				86C256D317FD30AF00632139 /* Help.png in Resources */,
+				863D26D718917A9C00613749 /* icon_solid.png in Resources */,
 				86C2568317F62E9200632139 /* MainStoryboard.storyboard in Resources */,
 				8648E2ED17F62679001B7488 /* InfoPlist.strings in Resources */,
 				86C2569517F64E0900632139 /* Default-568h@2x.png in Resources */,
+				863D26DB189702B900613749 /* BoilerLiquidsTableViewController.h in Resources */,
 				86C2569117F6371800632139 /* Images.xcassets in Resources */,
 				86C2568517F634C600632139 /* bg3.png in Resources */,
 				86C2569717F64E0900632139 /* Default@2x.png in Resources */,
@@ -418,6 +445,7 @@
 				8657D0F517DE79B900798573 /* Icon@2x.png in Resources */,
 				86C2569617F64E0900632139 /* Default.png in Resources */,
 				86C256BF17FC8DE300632139 /* Icon-60@2x.png in Resources */,
+				863D26D518917A8600613749 /* icon_boiler.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,16 +465,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863D26E01899D83A00613749 /* CoolingLiquidsTableViewController.m in Sources */,
 				862C726817AC7C55009AC07E /* main.m in Sources */,
 				862C726C17AC7C55009AC07E /* WTPAppDelegate.m in Sources */,
 				8657D0E817D5728700798573 /* BoilerWaterModel.m in Sources */,
 				8657D0ED17D6A30400798573 /* GradientButton.m in Sources */,
+				863D26DD1897030700613749 /* BoilerLiquidsTableViewController.m in Sources */,
 				86943B0617E7AB9D00413445 /* CoolingWaterModel.m in Sources */,
 				86943B1217E8212E00413445 /* InfoTableViewController.m in Sources */,
 				86943B1517EA660100413445 /* BoilerInputTableViewController.m in Sources */,
-				86943B1817EA7D5B00413445 /* BoilerProductsTableViewController.m in Sources */,
+				86943B1817EA7D5B00413445 /* BoilerSolidsTableViewController.m in Sources */,
 				86943B1B17EFBA8E00413445 /* CoolingInputTableViewController.m in Sources */,
-				86943B1E17EFBE9A00413445 /* CoolingProductsTableViewController.m in Sources */,
+				86943B1E17EFBE9A00413445 /* CoolingSolidsTableViewController.m in Sources */,
 				86943B2417F0C65700413445 /* FieldNavigationLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

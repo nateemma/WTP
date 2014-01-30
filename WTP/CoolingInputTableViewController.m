@@ -585,10 +585,14 @@ FieldNavigationLink *mCurrNavLink;
 
 
 
-// Button action to show products
+
+
+
+
+// Button action to show products - asks user for solids/liquids, then launches next screen
 - (IBAction)calculateProducts:(id)sender {
     if ([self checkInputFields]){
-        NSLog(@"CoolingInputViewController: input fields OK");
+        NSLog(@"CoolingInputTableViewController: input fields OK");
         // make sure keyboard is dismissed
         for (UIView* view in self.view.subviews) {
             if ([view isKindOfClass:[UITextField class]])
@@ -598,9 +602,13 @@ FieldNavigationLink *mCurrNavLink;
         [mCoolingModel calculateAmounts];
         [mCoolingModel save] ;
         // initiate transition to next display
-        [self performSegueWithIdentifier:@"CoolingProducts" sender:self];
+        
+        // Need to find out whether this is for solids or liquids and transition accordingly
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Choose Product Type" delegate:self cancelButtonTitle:@"Solids" otherButtonTitles:@"Liquids", nil];
+        [alert show];
+        //[alert release];
     } else {
-        NSLog(@"CoolingInputViewController: Error in input fields");
+        NSLog(@"CoolingInputTableViewController: Error in input fields");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing Data" message:@"Please enter data in all cells" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         
         [alert show];
@@ -608,6 +616,33 @@ FieldNavigationLink *mCurrNavLink;
     }
 }
 
+// completion handler for alert
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0){
+        [self calculateSolidProducts];
+    } else {
+        [self calculateLiquidProducts];
+    }
+}
+
+// Button action to show solid products
+- (void) calculateSolidProducts {
+    
+    // initiate transition to next display
+    [self performSegueWithIdentifier:@"CoolingSolidProducts" sender:self];
+    
+}
+
+
+
+
+// Button action to show liquid products
+- (void) calculateLiquidProducts {
+    
+    // initiate transition to next display
+    [self performSegueWithIdentifier:@"CoolingLiquidProducts" sender:self];
+}
 
 
 @end

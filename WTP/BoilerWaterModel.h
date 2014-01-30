@@ -5,6 +5,8 @@
 //  Created by Phil Price on 9/2/13.
 //  Copyright (c) 2013 Nateemma. All rights reserved.
 //
+//  01/23/14 - added support for liquid products
+
 
 #import <Foundation/Foundation.h>
 
@@ -58,10 +60,11 @@
 @property (copy, nonatomic) NSNumber *minSulphite;
 @property (copy, nonatomic) NSNumber *minCausticAlk;
 
+@property (copy, nonatomic) NSNumber *minAlkalinity;
 @property (copy, nonatomic) NSNumber *annualFeed;
 @property (copy, nonatomic) NSNumber *dissolvedO2;
 
-// Calculated values
+// Calculated values - Solids
 @property (copy, nonatomic) NSNumber *ss1295Dosage;
 @property (copy, nonatomic) NSNumber *ss1295Usage;
 
@@ -79,6 +82,48 @@
 
 @property (copy, nonatomic) NSNumber *ss8985Dosage;
 @property (copy, nonatomic) NSNumber *ss8985Usage;
+
+
+// Calculated values - Liquids
+@property (copy, nonatomic) NSNumber *s5Dosage;
+@property (copy, nonatomic) NSNumber *s5Usage;
+
+@property (copy, nonatomic) NSNumber *s10Dosage;
+@property (copy, nonatomic) NSNumber *s10Usage;
+
+@property (copy, nonatomic) NSNumber *s123Dosage;
+@property (copy, nonatomic) NSNumber *s123Usage;
+
+@property (copy, nonatomic) NSNumber *s125Dosage;
+@property (copy, nonatomic) NSNumber *s125Usage;
+
+@property (copy, nonatomic) NSNumber *s26Dosage;
+@property (copy, nonatomic) NSNumber *s26Usage;
+
+@property (copy, nonatomic) NSNumber *s28Dosage;
+@property (copy, nonatomic) NSNumber *s28Usage;
+
+@property (copy, nonatomic) NSNumber *s19Dosage;
+@property (copy, nonatomic) NSNumber *s19Usage;
+
+@property (copy, nonatomic) NSNumber *s456Dosage;
+@property (copy, nonatomic) NSNumber *s456Usage;
+
+@property (copy, nonatomic) NSNumber *s124Dosage;
+@property (copy, nonatomic) NSNumber *s124Usage;
+
+@property (copy, nonatomic) NSNumber *s22Dosage;
+@property (copy, nonatomic) NSNumber *s22Usage;
+
+@property (copy, nonatomic) NSNumber *s23Dosage;
+@property (copy, nonatomic) NSNumber *s23Usage;
+
+@property (copy, nonatomic) NSNumber *s88Dosage;
+@property (copy, nonatomic) NSNumber *s88Usage;
+
+@property (copy, nonatomic) NSNumber *s95Dosage;
+@property (copy, nonatomic) NSNumber *s95Usage;
+
 
 
 // Methods

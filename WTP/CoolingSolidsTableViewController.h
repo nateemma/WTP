@@ -1,5 +1,5 @@
 //
-//  CoolingProductsTableViewController.h
+//  CoolingSolidsTableViewController.h
 //  WTP
 //
 //  Created by Phil Price on 9/22/13.
@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
-@interface CoolingProductsTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
+@interface CoolingSolidsTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 
 
 // Product-based values

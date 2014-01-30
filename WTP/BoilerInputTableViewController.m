@@ -310,7 +310,7 @@ FieldNavigationLink *mCurrNavLink;
     // Get the cell's index path
     NSIndexPath *indexPath = [self findTableIndex:textFld];
     
-    if (indexPath){        
+    if (indexPath){
         // scroll the table to that index
         NSLog(@"Scrolling to section:%i row:%i", indexPath.section, indexPath.row);
         [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
@@ -636,7 +636,7 @@ FieldNavigationLink *mCurrNavLink;
 
 
 
-// Button action to show products
+// Button action to show products - asks user for solids/liquids, then launches next screen
 - (IBAction)calculateProducts:(id)sender {
     if ([self checkInputFields]){
         NSLog(@"BoilerInputTableViewController: input fields OK");
@@ -649,7 +649,11 @@ FieldNavigationLink *mCurrNavLink;
         [mBoilerModel calculateAmounts];
         [mBoilerModel save] ;
         // initiate transition to next display
-        [self performSegueWithIdentifier:@"BoilerProducts" sender:self];
+        
+        // Need to find out whether this is for solids or liquids and transition accordingly
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Choose Product Type" delegate:self cancelButtonTitle:@"Solids" otherButtonTitles:@"Liquids", nil];
+        [alert show];
+        //[alert release];
     } else {
         NSLog(@"BoilerInputTableViewController: Error in input fields");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing Data" message:@"Please enter data in all cells" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
@@ -657,6 +661,34 @@ FieldNavigationLink *mCurrNavLink;
         [alert show];
         
     }
+}
+
+// completion handler for alert
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0){
+        [self calculateSolidProducts];
+    } else {
+        [self calculateLiquidProducts];
+    }
+}
+
+// Button action to show solid products
+- (void) calculateSolidProducts {
+    
+    // initiate transition to next display
+    [self performSegueWithIdentifier:@"BoilerSolidProducts" sender:self];
+    
+}
+
+
+
+
+// Button action to show liquid products
+- (void) calculateLiquidProducts {
+    
+    // initiate transition to next display
+    [self performSegueWithIdentifier:@"BoilerLiquidProducts" sender:self];
 }
 
 

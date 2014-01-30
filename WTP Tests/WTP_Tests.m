@@ -52,7 +52,7 @@ CoolingWaterModel *mCoolingModel;
             result = NO;
             NSLog(@"!!! Field %@ does not match. Actual:%.03f Expected:%.03f Diff:%.08f", fieldName, actValue.floatValue, expValue.floatValue, diff);
         } else {
-            NSLog(@"\"%@\"  Actual:%.03f Expected:%.03f", fieldName, actValue.floatValue, expValue.floatValue);
+            //NSLog(@"\"%@\"  Actual:%.03f Expected:%.03f", fieldName, actValue.floatValue, expValue.floatValue);
            result = YES;
         }
     }
@@ -72,8 +72,10 @@ CoolingWaterModel *mCoolingModel;
     
 }
 
+//////////////////////
+// BOILER MODEL TESTS
+//////////////////////
 
-// Boiler Model test
 // Reads data from CSV file and comapres expected values against those calculated by the model
 - (void)testBoilerModel
 {
@@ -97,6 +99,7 @@ CoolingWaterModel *mCoolingModel;
     NSNumber *inMinCausticAlk;
     
     // parameters to hold expected results
+    // SOLIDS
     NSNumber *totalAnnual;
     NSNumber *dissolvedO2;
     NSNumber *expSS1295Dosage;
@@ -117,6 +120,49 @@ CoolingWaterModel *mCoolingModel;
     NSNumber *expSS8985Dosage;
     NSNumber *expSS8985Usage;
     
+    // LIQUIDS
+    
+    NSNumber *expMinAlkalinity;
+    
+    NSNumber *expS5Dosage;
+    NSNumber *expS5Usage;
+    
+    NSNumber *expS10Dosage;
+    NSNumber *expS10Usage;
+    
+    NSNumber *expS123Dosage;
+    NSNumber *expS123Usage;
+    
+    NSNumber *expS125Dosage;
+    NSNumber *expS125Usage;
+    
+    NSNumber *expS26Dosage;
+    NSNumber *expS26Usage;
+    
+    NSNumber *expS28Dosage;
+    NSNumber *expS28Usage;
+    
+    NSNumber *expS19Dosage;
+    NSNumber *expS19Usage;
+    
+    NSNumber *expS456Dosage;
+    NSNumber *expS456Usage;
+    
+    NSNumber *expS124Dosage;
+    NSNumber *expS124Usage;
+    
+    NSNumber *expS22Dosage;
+    NSNumber *expS22Usage;
+    
+    NSNumber *expS23Dosage;
+    NSNumber *expS23Usage;
+    
+    NSNumber *expS88Dosage;
+    NSNumber *expS88Usage;
+    
+    NSNumber *expS95Dosage;
+    NSNumber *expS95Usage;
+
     
     @try{
         NSLog(@"========================================================================================");
@@ -175,6 +221,7 @@ CoolingWaterModel *mCoolingModel;
                         inMinCausticAlk = [self scanFloat:scanner];
                         
                         // scan the expected output values
+                        // SOLIDS
                         totalAnnual = [self scanFloat:scanner];
                         dissolvedO2 = [self scanFloat:scanner];
                         expSS1295Dosage = [self scanFloat:scanner];
@@ -189,6 +236,49 @@ CoolingWaterModel *mCoolingModel;
                         expSS2295Usage  = [self scanFloat:scanner];
                         expSS8985Dosage = [self scanFloat:scanner];
                         expSS8985Usage  = [self scanFloat:scanner];
+                        
+                        // LIQUIDS
+                        expMinAlkalinity = [self scanFloat:scanner];
+                        
+                        expS5Dosage = [self scanFloat:scanner];
+                        expS5Usage  = [self scanFloat:scanner];
+                        
+                        expS10Dosage = [self scanFloat:scanner];
+                        expS10Usage  = [self scanFloat:scanner];
+                        
+                        expS123Dosage = [self scanFloat:scanner];
+                        expS123Usage  = [self scanFloat:scanner];
+                        
+                        expS125Dosage = [self scanFloat:scanner];
+                        expS125Usage  = [self scanFloat:scanner];
+                        
+                        expS26Dosage = [self scanFloat:scanner];
+                        expS26Usage  = [self scanFloat:scanner];
+                        
+                        expS28Dosage = [self scanFloat:scanner];
+                        expS28Usage  = [self scanFloat:scanner];
+                        
+                        expS19Dosage = [self scanFloat:scanner];
+                        expS19Usage  = [self scanFloat:scanner];
+                        
+                        expS456Dosage = [self scanFloat:scanner];
+                        expS456Usage  = [self scanFloat:scanner];
+                        
+                        expS124Dosage = [self scanFloat:scanner];
+                        expS124Usage  = [self scanFloat:scanner];
+                        
+                        expS22Dosage = [self scanFloat:scanner];
+                        expS22Usage  = [self scanFloat:scanner];
+                        
+                        expS23Dosage = [self scanFloat:scanner];
+                        expS23Usage  = [self scanFloat:scanner];
+                        
+                        expS88Dosage = [self scanFloat:scanner];
+                        expS88Usage  = [self scanFloat:scanner];
+                        
+                        expS95Dosage = [self scanFloat:scanner];
+                        expS95Usage  = [self scanFloat:scanner];
+                       
                         
                         // set Boiler Duty parameters
                         mBoilerModel.sumSteam      = inSumSteam;
@@ -215,8 +305,9 @@ CoolingWaterModel *mCoolingModel;
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.annualFeed expected:totalAnnual name:@"Annual Feed"]);
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.dissolvedO2 expected:dissolvedO2 name:@"Dissolved O2"]);
                         
+                        // SOLIDS
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.ss1295Dosage expected:expSS1295Dosage name:@"SS1295 Dosage"]);
-                        XCTAssertTrue([self fieldsMatch:mBoilerModel.ss1295Usage  expected:expSS1295Usage  name:@"SS1295 Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.ss1295Usage  expected:expSS1295Usage  name:@"SS1295  Usage"]);
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.ss1350Dosage expected:expSS1350Dosage name:@"SS1350 Dosage"]);
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.ss1350Usage  expected:expSS1350Usage  name:@"SS1350 Usage"]);
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.ss1095Dosage expected:expSS1095Dosage name:@"SS1095 Dosage"]);
@@ -227,6 +318,37 @@ CoolingWaterModel *mCoolingModel;
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.ss2295Usage  expected:expSS2295Usage  name:@"SS2295 Usage"]);
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.ss8985Dosage expected:expSS8985Dosage name:@"SS8985 Dosage"]);
                         XCTAssertTrue([self fieldsMatch:mBoilerModel.ss8985Usage  expected:expSS8985Usage  name:@"SS8985 Usage"]);
+                        
+                        // LIQUIDS
+                        
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.minAlkalinity expected:expMinAlkalinity name:@"min Alkalinity"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s5Dosage expected:expS5Dosage name:@"S5 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s5Usage  expected:expS5Usage name:@"S5Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s10Dosage expected:expS10Dosage name:@"S10 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s10Usage  expected:expS10Usage name:@"S10Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s123Dosage expected:expS123Dosage name:@"S123 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s123Usage  expected:expS123Usage name:@"S123Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s125Dosage expected:expS125Dosage name:@"S125 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s125Usage  expected:expS125Usage name:@"S125Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s26Dosage expected:expS26Dosage name:@"S26 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s26Usage  expected:expS26Usage name:@"S26Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s28Dosage expected:expS28Dosage name:@"S28 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s28Usage  expected:expS28Usage name:@"S28Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s19Dosage expected:expS19Dosage name:@"S19 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s19Usage  expected:expS19Usage name:@"S19Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s456Dosage expected:expS456Dosage name:@"S456 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s456Usage  expected:expS456Usage name:@"S456Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s124Dosage expected:expS124Dosage name:@"S124 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s124Usage  expected:expS124Usage name:@"S124Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s22Dosage expected:expS22Dosage name:@"S22 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s22Usage  expected:expS22Usage name:@"S22Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s23Dosage expected:expS23Dosage name:@"S23 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s23Usage  expected:expS23Usage name:@"S23Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s88Dosage expected:expS88Dosage name:@"S88 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s88Usage  expected:expS88Usage name:@"S88Usage Usage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s95Dosage expected:expS95Dosage name:@"S95 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mBoilerModel.s95Usage  expected:expS95Usage name:@"S95Usage Usage"]);
                     } else {
                         //NSLog(@"Ignoring line: %@", line);
                     }
@@ -253,7 +375,11 @@ CoolingWaterModel *mCoolingModel;
 
 
 
-// Cooling Model test
+
+///////////////////////
+// COOLING MODEL TESTS
+///////////////////////
+
 // Reads data from CSV file and comapres expected values against those calculated by the model
 
 - (void)testCoolingModel
@@ -347,6 +473,76 @@ CoolingWaterModel *mCoolingModel;
     NSNumber *expC42tUsage;
     NSNumber *expC42tCostKg;
     NSNumber *expC42tCostAnnum;
+    
+    
+    // LIQUIDS
+    
+    // Inhibitors
+    NSNumber *expH207Dosage;
+    NSNumber *expH207Usage;
+    
+    NSNumber *expH2073Dosage;
+    NSNumber *expH2073Usage;
+    
+    NSNumber *expH280Dosage;
+    NSNumber *expH280Usage;
+    
+    NSNumber *expH2805Dosage;
+    NSNumber *expH2805Usage;
+    
+    NSNumber *expH390Dosage;
+    NSNumber *expH390Usage;
+    
+    NSNumber *expH3905Dosage;
+    NSNumber *expH3905Usage;
+    
+    NSNumber *expH391Dosage;
+    NSNumber *expH391Usage;
+    
+    NSNumber *expH423Dosage;
+    NSNumber *expH423Usage;
+    
+    NSNumber *expH425Dosage;
+    NSNumber *expH425Usage;
+    
+    NSNumber *expH4255Dosage;
+    NSNumber *expH4255Usage;
+    
+    NSNumber *expH535Dosage;
+    NSNumber *expH535Usage;
+    
+    NSNumber *expH874Dosage;
+    NSNumber *expH874Usage;
+    
+    // Biocides - non-oxidisers
+    NSNumber *expC31Dosage;
+    NSNumber *expC31Usage;
+    
+    NSNumber *expC32Dosage;
+    NSNumber *expC32Usage;
+    
+    NSNumber *expC44Dosage;
+    NSNumber *expC44Usage;
+    
+    NSNumber *expC45Dosage;
+    NSNumber *expC45Usage;
+    
+    NSNumber *expC48Dosage;
+    NSNumber *expC48Usage;
+    
+    NSNumber *expC51Dosage;
+    NSNumber *expC51Usage;
+    
+    NSNumber *expC52Dosage;
+    NSNumber *expC52Usage;
+    
+    NSNumber *expC54Dosage;
+    NSNumber *expC54Usage;
+    
+    NSNumber *expC58Dosage;
+    NSNumber *expC58Usage;
+    
+
     
     NSError *error = nil;
     
@@ -461,6 +657,52 @@ CoolingWaterModel *mCoolingModel;
                         expC42tCostKg = [self scanFloat:scanner];
                         expC42tCostAnnum = [self scanFloat:scanner];
                         
+                        // Inhibitors
+                        expH207Dosage = [self scanFloat:scanner];
+                        expH207Usage = [self scanFloat:scanner];
+                        expH2073Dosage = [self scanFloat:scanner];
+                        expH2073Usage = [self scanFloat:scanner];
+                        expH280Dosage = [self scanFloat:scanner];
+                        expH280Usage = [self scanFloat:scanner];
+                        expH2805Dosage = [self scanFloat:scanner];
+                        expH2805Usage = [self scanFloat:scanner];
+                        expH390Dosage = [self scanFloat:scanner];
+                        expH390Usage = [self scanFloat:scanner];
+                        expH3905Dosage = [self scanFloat:scanner];
+                        expH3905Usage = [self scanFloat:scanner];
+                        expH391Dosage = [self scanFloat:scanner];
+                        expH391Usage = [self scanFloat:scanner];
+                        expH423Dosage = [self scanFloat:scanner];
+                        expH423Usage = [self scanFloat:scanner];
+                        expH425Dosage = [self scanFloat:scanner];
+                        expH425Usage = [self scanFloat:scanner];
+                        expH4255Dosage = [self scanFloat:scanner];
+                        expH4255Usage = [self scanFloat:scanner];
+                        expH535Dosage = [self scanFloat:scanner];
+                        expH535Usage = [self scanFloat:scanner];
+                        expH874Dosage = [self scanFloat:scanner];
+                        expH874Usage = [self scanFloat:scanner];
+                        
+                        // Biocides - non-oxidisers
+                        expC31Dosage = [self scanFloat:scanner];
+                        expC31Usage = [self scanFloat:scanner];
+                        expC32Dosage = [self scanFloat:scanner];
+                        expC32Usage = [self scanFloat:scanner];
+                        expC44Dosage = [self scanFloat:scanner];
+                        expC44Usage = [self scanFloat:scanner];
+                        expC45Dosage = [self scanFloat:scanner];
+                        expC45Usage = [self scanFloat:scanner];
+                        expC48Dosage = [self scanFloat:scanner];
+                        expC48Usage = [self scanFloat:scanner];
+                        expC51Dosage = [self scanFloat:scanner];
+                        expC51Usage = [self scanFloat:scanner];
+                        expC52Dosage = [self scanFloat:scanner];
+                        expC52Usage = [self scanFloat:scanner];
+                        expC54Dosage = [self scanFloat:scanner];
+                        expC54Usage = [self scanFloat:scanner];
+                        expC58Dosage = [self scanFloat:scanner];
+                        expC58Usage = [self scanFloat:scanner];
+
                         // set cooling model inputs
                         mCoolingModel.circulation = inCirculation  ;
                         mCoolingModel.deltaT =    inDeltaTC  ;
@@ -528,6 +770,71 @@ CoolingWaterModel *mCoolingModel;
                         //XCTAssertTrue([self fieldsMatch:mCoolingModel.c42tCostKg expected:expC42tCostKg  name:@"C42T Cost/kg"]);
                         //XCTAssertTrue([self fieldsMatch:mCoolingModel.c42tCostAnnum expected:expC42tCostAnnum  name:@"C42T Cost/Annum"]);
                         
+                        // Inhibitors
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h207Dosage expected:expH207Dosage  name:@"H207  Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h207Usage expected:expH207Usage  name:@"H207 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h2073Dosage expected:expH2073Dosage  name:@"H2073 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h2073Usage expected:expH2073Usage  name:@"H2073 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h280Dosage expected:expH280Dosage  name:@"H280 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h280Usage expected:expH280Usage  name:@"H280 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h2805Dosage expected:expH2805Dosage  name:@"H2805 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h2805Usage expected:expH2805Usage  name:@"H2805 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h390Dosage expected:expH390Dosage  name:@"H390 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h390Usage expected:expH390Usage  name:@"H390 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h3905Dosage expected:expH3905Dosage  name:@"H3905 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h3905Usage expected:expH3905Usage  name:@"H3905 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h391Dosage expected:expH391Dosage  name:@"H391 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h391Usage expected:expH391Usage  name:@"H391 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h423Dosage expected:expH423Dosage  name:@"H423 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h423Usage expected:expH423Usage  name:@"H423 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h425Dosage expected:expH425Dosage  name:@"H425 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h425Usage expected:expH425Usage  name:@"H425 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h4255Dosage expected:expH4255Dosage  name:@"H4255 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h4255Usage expected:expH4255Usage  name:@"H4255 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h535Dosage expected:expH535Dosage  name:@"H535 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h535Usage expected:expH535Usage  name:@"H535 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h874Dosage expected:expH874Dosage  name:@"H874 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.h874Usage expected:expH874Usage  name:@"H874 Usage"]);
+                        
+                        // Biocides - non-oxidisers
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c31Dosage expected:expC31Dosage  name:@"C31 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c31Usage expected:expC31Usage  name:@"C31 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c32Dosage expected:expC32Dosage  name:@"C32 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c32Usage expected:expC32Usage  name:@"C32 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c44Dosage expected:expC44Dosage  name:@"C44 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c44Usage expected:expC44Usage  name:@"C44 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c45Dosage expected:expC45Dosage  name:@"C45 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c45Usage expected:expC45Usage  name:@"C45 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c48Dosage expected:expC48Dosage  name:@"C48 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c48Usage expected:expC48Usage  name:@"C48 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c51Dosage expected:expC51Dosage  name:@"C51 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c51Usage expected:expC51Usage  name:@"C51 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c52Dosage expected:expC52Dosage  name:@"C52 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c52Usage expected:expC52Usage  name:@"C52 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c54Dosage expected:expC54Dosage  name:@"C54 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c54Usage expected:expC54Usage  name:@"C54 Usage"]);
+                        
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c58Dosage expected:expC58Dosage  name:@"C58 Dosage"]);
+                        XCTAssertTrue([self fieldsMatch:mCoolingModel.c58Usage expected:expC58Usage  name:@"C58 Usage"]);
+
                     } else {
                         //NSLog(@"Ignoring line: %@", line);
                     }

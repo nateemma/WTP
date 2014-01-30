@@ -5,6 +5,8 @@
 //  Created by Phil Price on 9/2/13.
 //  Copyright (c) 2013 Nateemma. All rights reserved.
 //
+//  01/23/14 - added support for liquid products
+
 
 #import "BoilerWaterModel.h"
 
@@ -266,6 +268,7 @@ static float lookupData [] = { 6.8, 6.2, 5.7, 5.2, 4.7, 4.25, 3.8, 3.4, 2.8, 2.2
     NSLog(@"BoilerWaterModel: calculateAmounts()");
     
     double tmp; // temp variable for holding double values
+    double tmp2;
     
     @try {
         // Annual Feed
@@ -291,7 +294,7 @@ static float lookupData [] = { 6.8, 6.2, 5.7, 5.2, 4.7, 4.25, 3.8, 3.4, 2.8, 2.2
         }
         NSLog(@"BoilerWaterModel: temp:%.02f idx:%i, O2:%.01f (maxIdx:%i)", self.temp.floatValue, idx, self.dissolvedO2.doubleValue, maxIdx);
         
-        // Product Amounts
+        // Product Amounts - SOLIDS
         
         // SS1295
         tmp = (self.dissolvedO2.doubleValue * 10.0) + (35.0 / (self.maxTDS.doubleValue / self.TDS.doubleValue));
@@ -341,6 +344,75 @@ static float lookupData [] = { 6.8, 6.2, 5.7, 5.2, 4.7, 4.25, 3.8, 3.4, 2.8, 2.2
         
         tmp = self.ss8985Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0 ;
         self.ss8985Usage = [NSNumber numberWithDouble:(tmp)];
+        
+        
+        // Product Amounts - LIQUIDS
+        
+        
+        tmp = 15.0 / 100.0 * self.maxTDS.doubleValue;
+        self.minAlkalinity = [NSNumber numberWithDouble:(tmp)];
+        NSLog(@"BoilerWaterModel: minAlk:%.02f", self.minAlkalinity.doubleValue);
+        
+        tmp2 = self.maxTDS.doubleValue / self.TDS.doubleValue; // common term
+        
+        // S5
+        self.s5Dosage = [NSNumber numberWithDouble:(self.dissolvedO2.doubleValue*35.0 +(120.0 / tmp2))];
+        self.s5Usage = [NSNumber numberWithDouble:(self.s5Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S10
+        self.s10Dosage = [NSNumber numberWithDouble:(self.dissolvedO2.doubleValue*18.0 +(65.0 / tmp2))];
+        self.s10Usage = [NSNumber numberWithDouble:(self.s10Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S123
+        self.s123Dosage = [NSNumber numberWithDouble:(self.dissolvedO2.doubleValue*65.0 +(150.0 / tmp2))];
+        self.s123Usage = [NSNumber numberWithDouble:(self.s123Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S125
+        self.s125Dosage = [NSNumber numberWithDouble:(self.dissolvedO2.doubleValue*40.0 +(240.0 / tmp2))];
+        self.s125Usage = [NSNumber numberWithDouble:(self.s125Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S26
+        self.s26Dosage = [NSNumber numberWithDouble:((600.0 / tmp2))];
+        self.s26Usage = [NSNumber numberWithDouble:(self.s26Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S28
+        self.s28Dosage = [NSNumber numberWithDouble:((600.0 / tmp2))];
+        self.s28Usage = [NSNumber numberWithDouble:(self.s28Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S19
+        self.s19Dosage =  [NSNumber numberWithDouble:(self.CaHardness.doubleValue - self.MAlk.doubleValue + ((1000.0-self.minAlkalinity.doubleValue) / tmp2))];
+        if (self.s19Dosage.doubleValue < 0.0){
+            self.s19Usage = [NSNumber numberWithDouble:(0.0)] ;
+            self.s19Dosage = [NSNumber numberWithDouble:(0.0)] ;
+        } else {
+            self.s19Usage = [NSNumber numberWithDouble:(self.s19Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        }
+        
+        // S456
+        self.s456Dosage = [NSNumber numberWithDouble:(150.0 * (self.CaHardness.doubleValue+0.25) / tmp2)] ;
+        self.s456Usage = [NSNumber numberWithDouble:(self.s456Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S124
+        self.s124Dosage = [NSNumber numberWithDouble:((1200.0 / tmp2))];
+        self.s124Usage = [NSNumber numberWithDouble:(self.s124Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S22
+        self.s22Dosage = [NSNumber numberWithDouble:((200.0 / tmp2) + (4.0 * self.CaHardness.doubleValue))];
+        self.s22Usage = [NSNumber numberWithDouble:(self.s22Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S23
+        self.s23Dosage = [NSNumber numberWithDouble:((1000.0 / tmp2) + (20.0 * self.CaHardness.doubleValue))];
+        self.s23Usage = [NSNumber numberWithDouble:(self.s23Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S88
+        self.s88Dosage = [NSNumber numberWithDouble:(3.0 * self.MAlk.doubleValue)];
+        self.s88Usage = [NSNumber numberWithDouble:(self.s88Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+        
+        // S95
+        self.s95Dosage = [NSNumber numberWithDouble:(5.0 * self.MAlk.doubleValue)];
+        self.s95Usage = [NSNumber numberWithDouble:(self.s95Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0)] ;
+
+
     }
     @catch (NSException *e) {
         NSLog(@"BoilerWaterModel.calculateAmounts - exception: %@", e.reason);
