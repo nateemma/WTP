@@ -68,6 +68,9 @@
 @property (copy, nonatomic) NSNumber *ss1295Dosage;
 @property (copy, nonatomic) NSNumber *ss1295Usage;
 
+@property (copy, nonatomic) NSNumber *ss1294Dosage;
+@property (copy, nonatomic) NSNumber *ss1294Usage;
+
 @property (copy, nonatomic) NSNumber *ss1350Dosage;
 @property (copy, nonatomic) NSNumber *ss1350Usage;
 

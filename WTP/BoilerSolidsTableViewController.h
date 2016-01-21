@@ -11,6 +11,9 @@
 
 @interface BoilerSolidsTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 
+@property (retain, nonatomic) IBOutlet UILabel *outSS1294Dosage;
+@property (retain, nonatomic) IBOutlet UILabel *outSS1294Usage;
+
 @property (retain, nonatomic) IBOutlet UILabel *outSS1295Dosage;
 @property (retain, nonatomic) IBOutlet UILabel *outSS1295Usage;
 

@@ -296,6 +296,13 @@ static float lookupData [] = { 6.8, 6.2, 5.7, 5.2, 4.7, 4.25, 3.8, 3.4, 2.8, 2.2
         
         // Product Amounts - SOLIDS
         
+        // SS1294
+        tmp = (220.0 / (self.maxTDS.doubleValue / self.TDS.doubleValue));
+        self.ss1294Dosage = [NSNumber numberWithDouble:(tmp)];
+        
+        tmp = self.ss1294Dosage.doubleValue * self.annualFeed.doubleValue / 1000.0 ;
+        self.ss1294Usage = [NSNumber numberWithDouble:(tmp)];
+        
         // SS1295
         tmp = (self.dissolvedO2.doubleValue * 10.0) + (35.0 / (self.maxTDS.doubleValue / self.TDS.doubleValue));
         self.ss1295Dosage = [NSNumber numberWithDouble:(tmp)];

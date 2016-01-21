@@ -110,6 +110,8 @@ BoilerWaterModel *mBoilerModel;
 // update display variables/labels based on model calculated values
 
 - (void) updateDisplay {
+    self.outSS1294Dosage.text = [self round1:mBoilerModel.ss1294Dosage.doubleValue];
+    self.outSS1294Usage.text  = [self round1:mBoilerModel.ss1294Usage.doubleValue];
     self.outSS1295Dosage.text = [self round1:mBoilerModel.ss1295Dosage.doubleValue];
     self.outSS1295Usage.text  = [self round1:mBoilerModel.ss1295Usage.doubleValue];
     self.outSS1350Dosage.text = [self round1:mBoilerModel.ss1350Dosage.doubleValue];
