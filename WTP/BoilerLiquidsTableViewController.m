@@ -75,14 +75,20 @@ BoilerWaterModel *mBoilerModel;
 }
 
 
+- (void) viewDidAppear:(BOOL)animated{
+    NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
+    [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+}
+
+
 // control rotation handling. In this case, only allow landscape orientation
 - (BOOL) shouldAutorotate {
-    if (UIDeviceOrientationIsLandscape(self.interfaceOrientation))
-    {
-        return YES;
-    } else {
-        return NO;
-    }
+    //if (UIDeviceOrientationIsLandscape(self.interfaceOrientation))
+    //{
+    //    return YES;
+    //} else {
+    return NO;
+    //}
 }
 
 
