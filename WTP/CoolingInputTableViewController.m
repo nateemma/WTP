@@ -295,7 +295,7 @@ FieldNavigationLink *mCurrNavLink;
     
     if (indexPath){
         // scroll the table to that index
-        NSLog(@"Scrolling to section:%i row:%i", indexPath.section, indexPath.row);
+        NSLog(@"Scrolling to section:%li row:%li", (long)indexPath.section, (long)indexPath.row);
         [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
     } else {
         NSLog(@"no index returned, not scrolling");

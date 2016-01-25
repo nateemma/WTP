@@ -52,6 +52,7 @@
 		86C256B717FB43A400632139 /* WTP_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C256B617FB43A400632139 /* WTP_Tests.m */; };
 		86C256BF17FC8DE300632139 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C256BE17FC8DE300632139 /* Icon-60@2x.png */; };
 		86C256D317FD30AF00632139 /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C256D117FD2FC900632139 /* Help.png */; };
+		86EF1F751C52A1C90012555A /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 86EF1F741C52A1C90012555A /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		86C256B817FB43A400632139 /* WTP Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTP Tests-Prefix.pch"; sourceTree = "<group>"; };
 		86C256BE17FC8DE300632139 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		86C256D117FD2FC900632139 /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Help.png; path = WTP/Help.png; sourceTree = "<group>"; };
+		86EF1F741C52A1C90012555A /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				8657D0EC17D6A30400798573 /* GradientButton.m */,
 				8657D0F217DE79AF00798573 /* Icon.png */,
 				86012D2717CF9B5400E7E61E /* MainStoryboard.storyboard */,
+				86EF1F741C52A1C90012555A /* assets */,
 				8657D0F417DE79B900798573 /* Icon@2x.png */,
 				86012D2517CF9B5400E7E61E /* InfoPlist.strings */,
 				86943B1017E8212E00413445 /* InfoTableViewController.h */,
@@ -432,6 +435,7 @@
 				863D26D318917A7600613749 /* icon_liquid.png in Resources */,
 				86C256D317FD30AF00632139 /* Help.png in Resources */,
 				863D26D718917A9C00613749 /* icon_solid.png in Resources */,
+				86EF1F751C52A1C90012555A /* assets in Resources */,
 				86C2568317F62E9200632139 /* MainStoryboard.storyboard in Resources */,
 				8648E2ED17F62679001B7488 /* InfoPlist.strings in Resources */,
 				86C2569517F64E0900632139 /* Default-568h@2x.png in Resources */,
@@ -628,7 +632,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nateemma.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DF522ED7-02CF-4C3D-8203-18F5A636A3E3";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -647,7 +651,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nateemma.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DF522ED7-02CF-4C3D-8203-18F5A636A3E3";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

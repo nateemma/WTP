@@ -28,7 +28,7 @@
 {
     if (normalGradient == NULL)
     {
-        int locCount = [normalGradientLocations count];
+        int locCount = (int)[normalGradientLocations count];
         CGFloat locations[locCount];
         for (int i = 0; i < [normalGradientLocations count]; i++)
         {
