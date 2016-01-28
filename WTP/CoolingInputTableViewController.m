@@ -606,10 +606,24 @@ FieldNavigationLink *mCurrNavLink;
         [mCoolingModel save] ;
         // initiate transition to next display
         
+        /* old way
         // Need to find out whether this is for solids or liquids and transition accordingly
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Choose Product Type" delegate:self cancelButtonTitle:@"Solids" otherButtonTitles:@"Liquids", nil];
         [alert show];
-        //[alert release];
+         
+         //[alert release];
+         */
+        
+        /* check product type and launch appropriate segue */
+        ProductType ptype = [mCoolingModel getProductType];
+        if (ptype == SOLID) {
+            [self calculateSolidProducts];
+        } else if (ptype == LIQUID) {
+            [self calculateLiquidProducts];
+        } else {
+            NSLog(@"CoolingInputTableViewController.m: !!! Unkown Product Type: %ld", (long)ptype);
+        }
+        
     } else {
         NSLog(@"CoolingInputTableViewController: Error in input fields");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing Data" message:@"Please enter data in all cells" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];

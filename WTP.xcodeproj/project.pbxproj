@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256704E91C58222800EE5168 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256704E81C58222800EE5168 /* MainView.m */; };
+		256704EB1C582D5700EE5168 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 256704EA1C582D5700EE5168 /* en.lproj */; };
 		862C725C17AC7C55009AC07E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725B17AC7C55009AC07E /* UIKit.framework */; };
 		862C725E17AC7C55009AC07E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725D17AC7C55009AC07E /* Foundation.framework */; };
 		862C726017AC7C55009AC07E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C725F17AC7C55009AC07E /* CoreGraphics.framework */; };
@@ -78,8 +80,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		256704E71C5820CD00EE5168 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		256704E81C58222800EE5168 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		256704EA1C582D5700EE5168 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = WTP/en.lproj; sourceTree = "<group>"; };
+		256704EC1C5991D800EE5168 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		86012D2617CF9B5400E7E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		86012D2817CF9B5400E7E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		86012D2D17CF9B5400E7E61E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86012D2E17CF9B5400E7E61E /* WTP-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WTP-Info.plist"; sourceTree = "<group>"; };
 		86012D2F17CF9B5400E7E61E /* WTP-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WTP-Prefix.pch"; sourceTree = "<group>"; };
@@ -197,6 +202,7 @@
 				863D26D618917A9C00613749 /* icon_solid.png */,
 				863D26D018917A5600613749 /* icon_cooling.png */,
 				8657D0E617D5728700798573 /* BoilerWaterModel.h */,
+				256704EC1C5991D800EE5168 /* Constants.h */,
 				8657D0E717D5728700798573 /* BoilerWaterModel.m */,
 				86943B1317EA660100413445 /* BoilerInputTableViewController.h */,
 				86943B1417EA660100413445 /* BoilerInputTableViewController.m */,
@@ -217,12 +223,13 @@
 				8657D0EB17D6A30400798573 /* GradientButton.h */,
 				8657D0EC17D6A30400798573 /* GradientButton.m */,
 				8657D0F217DE79AF00798573 /* Icon.png */,
-				86012D2717CF9B5400E7E61E /* MainStoryboard.storyboard */,
 				86EF1F741C52A1C90012555A /* assets */,
 				8657D0F417DE79B900798573 /* Icon@2x.png */,
 				86012D2517CF9B5400E7E61E /* InfoPlist.strings */,
 				86943B1017E8212E00413445 /* InfoTableViewController.h */,
+				256704E71C5820CD00EE5168 /* MainView.h */,
 				86943B1117E8212E00413445 /* InfoTableViewController.m */,
+				256704E81C58222800EE5168 /* MainView.m */,
 				86012D2D17CF9B5400E7E61E /* main.m */,
 				86012D2E17CF9B5400E7E61E /* WTP-Info.plist */,
 				86012D2F17CF9B5400E7E61E /* WTP-Prefix.pch */,
@@ -250,6 +257,7 @@
 		862C724F17AC7C55009AC07E = {
 			isa = PBXGroup;
 			children = (
+				256704EA1C582D5700EE5168 /* en.lproj */,
 				8633D2271807671C0095342F /* testdata */,
 				86C2569217F64E0900632139 /* Default-568h@2x.png */,
 				86C2569317F64E0900632139 /* Default.png */,
@@ -437,6 +445,7 @@
 				863D26D718917A9C00613749 /* icon_solid.png in Resources */,
 				86EF1F751C52A1C90012555A /* assets in Resources */,
 				86C2568317F62E9200632139 /* MainStoryboard.storyboard in Resources */,
+				256704EB1C582D5700EE5168 /* en.lproj in Resources */,
 				8648E2ED17F62679001B7488 /* InfoPlist.strings in Resources */,
 				86C2569517F64E0900632139 /* Default-568h@2x.png in Resources */,
 				863D26DB189702B900613749 /* BoilerLiquidsTableViewController.h in Resources */,
@@ -478,6 +487,7 @@
 				86943B0617E7AB9D00413445 /* CoolingWaterModel.m in Sources */,
 				86943B1217E8212E00413445 /* InfoTableViewController.m in Sources */,
 				86943B1517EA660100413445 /* BoilerInputTableViewController.m in Sources */,
+				256704E91C58222800EE5168 /* MainView.m in Sources */,
 				86943B1817EA7D5B00413445 /* BoilerSolidsTableViewController.m in Sources */,
 				86943B1B17EFBA8E00413445 /* CoolingInputTableViewController.m in Sources */,
 				86943B1E17EFBE9A00413445 /* CoolingSolidsTableViewController.m in Sources */,
@@ -517,14 +527,6 @@
 				86012D2617CF9B5400E7E61E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		86012D2717CF9B5400E7E61E /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				86012D2817CF9B5400E7E61E /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		86012D4417D1149B00E7E61E /* InfoPlist.strings */ = {

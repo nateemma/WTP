@@ -12,10 +12,15 @@
 
 @implementation BoilerWaterModel
 
+
+
+
 ////////////////////////////////////////////////
 // Singleton-related methods:
 ////////////////////////////////////////////////
 
+// Static data members
+static ProductType currProductType;
 static BoilerWaterModel *sharedInstance = nil;
 
 // Get the shared instance and create it if necessary.
@@ -43,6 +48,8 @@ static BoilerWaterModel *sharedInstance = nil;
     
     if (self) {
         // Work your initialising magic here as you normally would
+        
+        currProductType = NONE;
     }
     
     return self;
@@ -50,6 +57,18 @@ static BoilerWaterModel *sharedInstance = nil;
 
 
 
+
+////////////////////////////////////////////////
+// Product Type methods (not persistent)
+////////////////////////////////////////////////
+
+- (void)setProductType:(ProductType)productType {
+    currProductType = productType;
+}
+
+- (ProductType)getProductType {
+    return currProductType;
+}
 
 ////////////////////////////////////////////////
 // Persistence methods

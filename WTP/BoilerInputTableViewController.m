@@ -25,6 +25,9 @@ NSMutableDictionary *mFieldDict ;
 // curent navigation field
 FieldNavigationLink *mCurrNavLink;
 
+
+UIViewController * mSourceController;
+
 //////////////////////////////////////////////////
 // Template stuff (from superclass)
 //////////////////////////////////////////////////
@@ -42,12 +45,15 @@ FieldNavigationLink *mCurrNavLink;
 {
     [super viewDidLoad];
     
+    
+    NSLog(@"BoilerInputTableViewController.m viewDidLoad()");
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+
     
     // create the model object
     mBoilerModel = [BoilerWaterModel sharedInstance];
@@ -68,6 +74,7 @@ FieldNavigationLink *mCurrNavLink;
     
     // setup the navigation 'chain'
     [self setupNavigation];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -116,6 +123,9 @@ FieldNavigationLink *mCurrNavLink;
  }
  }
  */
+
+
+
 
 
 
@@ -657,9 +667,22 @@ FieldNavigationLink *mCurrNavLink;
         // initiate transition to next display
         
         // Need to find out whether this is for solids or liquids and transition accordingly
+        /* old menu-style code
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Choose Product Type" delegate:self cancelButtonTitle:@"Solids" otherButtonTitles:@"Liquids", nil];
         [alert show];
         //[alert release];
+         */
+        
+        /* check product type and launch appropriate segue */
+        ProductType ptype = [mBoilerModel getProductType];
+        if (ptype == SOLID) {
+            [self calculateSolidProducts];
+        } else if (ptype == LIQUID) {
+            [self calculateLiquidProducts];
+        } else {
+            NSLog(@"BoilerInputTableViewController.m: !!! Unkown Product Type: %ld", (long)ptype);
+        }
+
     } else {
         NSLog(@"BoilerInputTableViewController: Error in input fields");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing Data" message:@"Please enter data in all cells" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];

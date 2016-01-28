@@ -9,6 +9,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 // Class that represents the data and algorithms of a boiler site
 
@@ -17,6 +18,7 @@
 
 // Site Name
 @property (copy, nonatomic) NSString *site; // this is the key for the data
+
 
 // String values provided by user
 @property (copy, nonatomic) NSString *inSumSteam;
@@ -134,6 +136,10 @@
 - (id)init;
 
 + (id)sharedInstance;
+
+- (void)setProductType:(ProductType)productType;
+
+- (ProductType)getProductType;
 
 - (BOOL) inputsValid;
 

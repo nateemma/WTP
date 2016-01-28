@@ -19,6 +19,8 @@
 // Singleton-related methods:
 ////////////////////////////////////////////////
 
+
+static ProductType currProductType;
 static CoolingWaterModel *sharedInstance = nil;
 
 // Get the shared instance and create it if necessary.
@@ -65,6 +67,18 @@ static CoolingWaterModel *sharedInstance = nil;
 
 
 
+
+////////////////////////////////////////////////
+// Product Type methods (not persistent)
+////////////////////////////////////////////////
+
+- (void)setProductType:(ProductType)productType {
+    currProductType = productType;
+}
+
+- (ProductType)getProductType {
+    return currProductType;
+}
 
 
 ////////////////////////////////////////////////

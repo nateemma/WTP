@@ -10,6 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#include "Constants.h"
 
 @interface CoolingWaterModel :  NSObject
 
@@ -203,6 +204,10 @@
 - (id)init;
 
 + (id)sharedInstance;
+
+- (void)setProductType:(ProductType)productType;
+
+- (ProductType)getProductType;
 
 - (BOOL) inputsValid;
 
